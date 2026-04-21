@@ -1,5 +1,11 @@
 # @consenttheater/playbill
 
+[![npm version](https://img.shields.io/npm/v/@consenttheater/playbill.svg)](https://www.npmjs.com/package/@consenttheater/playbill)
+[![npm downloads](https://img.shields.io/npm/dm/@consenttheater/playbill.svg)](https://www.npmjs.com/package/@consenttheater/playbill)
+[![License: AGPL-3.0-or-later](https://img.shields.io/badge/License-AGPL--3.0--or--later-blue.svg)](LICENSE)
+[![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Node](https://img.shields.io/node/v/@consenttheater/playbill.svg)](package.json)
+
 **The Playbill** — an open-source, tiered knowledge base of GDPR-relevant web trackers, with pure-function matching and risk-scoring utilities.
 
 A theater playbill lists every actor and their role on stage. This package does the same for the web: every tracking cookie, every tracking domain, every company behind them — identified, categorized, and scored against GDPR.
