@@ -1,0 +1,44 @@
+# Note: `files` in package.json is the primary allowlist — only `dist/`, README,
+# and LICENSE ship. This file is a second line of defense for anything that
+# could sneak into `dist/` (tsbuildinfo, test output, OS junk) and guards
+# against accidental leaks if `files` is ever broadened.
+
+# OS / editor clutter
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Build artifacts that tsc could emit into dist/ later
+*.tsbuildinfo
+*.log
+
+# Test files (in case they ever land in dist/)
+**/*.test.js
+**/*.test.d.ts
+**/*.test.d.ts.map
+**/*.spec.js
+**/*.spec.d.ts
+**/*.spec.d.ts.map
+tests/
+__tests__/
+__mocks__/
+coverage/
+.nyc_output/
+
+# Secrets / env
+.env
+.env.*
+*.pem
+*.key
+
+# Source that should never leak (belt-and-suspenders; `files` already excludes)
+src/
+scripts/
+tsconfig.json
+.nvmrc
+.gitignore
+.npmignore
+package-lock.json

@@ -35,17 +35,17 @@
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
     },
-    "./actors/advertising": { "import": "./src/actors/advertising.json" },
-    "./actors/analytics": { "import": "./src/actors/analytics.json" },
-    "./actors/marketing": { "import": "./src/actors/marketing.json" },
-    "./actors/functional": { "import": "./src/actors/functional.json" },
-    "./actors/social": { "import": "./src/actors/social.json" },
-    "./actors/session-recording": { "import": "./src/actors/session_recording.json" },
-    "./actors/data-leak": { "import": "./src/actors/data_leak.json" },
-    "./actors/security": { "import": "./src/actors/security.json" },
-    "./actors/consent": { "import": "./src/actors/consent.json" },
-    "./actors/fingerprinting": { "import": "./src/actors/fingerprinting.json" },
-    "./actors/tag-manager": { "import": "./src/actors/tag_manager.json" },
+    "./actors/advertising": { "import": "./dist/actors/advertising.json" },
+    "./actors/analytics": { "import": "./dist/actors/analytics.json" },
+    "./actors/marketing": { "import": "./dist/actors/marketing.json" },
+    "./actors/functional": { "import": "./dist/actors/functional.json" },
+    "./actors/social": { "import": "./dist/actors/social.json" },
+    "./actors/session-recording": { "import": "./dist/actors/session_recording.json" },
+    "./actors/data-leak": { "import": "./dist/actors/data_leak.json" },
+    "./actors/security": { "import": "./dist/actors/security.json" },
+    "./actors/consent": { "import": "./dist/actors/consent.json" },
+    "./actors/fingerprinting": { "import": "./dist/actors/fingerprinting.json" },
+    "./actors/tag-manager": { "import": "./dist/actors/tag_manager.json" },
     "./matcher": {
       "import": "./dist/matcher.js",
       "types": "./dist/matcher.d.ts"
@@ -60,7 +60,6 @@
   },
   "files": [
     "dist",
-    "src/actors",
     "README.md",
     "LICENSE"
   ],
