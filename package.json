@@ -1,6 +1,6 @@
 {
   "name": "@consenttheater/playbill",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "An open-source, tiered knowledge base of GDPR-relevant web trackers (cookies, domains, companies) with pure-function matching and risk-scoring utilities. Standalone library for privacy auditors, compliance scanners, consent platforms, browser extensions, and research tools.",
   "author": {
     "name": "ConsentTheater",
