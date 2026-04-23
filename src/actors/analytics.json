@@ -1,7 +1,7 @@
 {
   "category": "analytics",
   "description": "Usage measurement, audience insights, A/B testing, monitoring, CDP, attribution",
-  "stats": { "cookies": 730, "domains": 1916, "companies": 1338 },
+  "stats": { "cookies": 730, "domains": 1917, "companies": 1338 },
   "cookies": {
     "888_analytics_*": {"company":"888 Holdings","service":"888 Analytics","category":"analytics","description":"888 Holdings gambling analytics for casino and sports betting player behavior measurement","severity":"high","pattern":true,"lifetime":"1 year","docs_url":"https://www.888.com/security-and-privacy/privacy-policy/"},
     "ABTasty": {"company":"AB Tasty","service":"AB Tasty","category":"analytics","description":"AB Tasty main visitor cookie storing A/B test assignments and personalization segment data","severity":"high","lifetime":"13 months","docs_url":"https://www.abtasty.com/privacy-policy/"},
@@ -1954,6 +1954,7 @@
     "hm.baidu.com": {"company":"Baidu","service":"Baidu Tongji (Analytics)","category":"analytics","severity":"high","docs_url":"https://tongji.baidu.com/web/help/article?id=330&type=0"},
     "hs.fi": {"company":"Sanoma","service":"Helsingin Sanomat","category":"analytics","severity":"high","docs_url":"https://www.sanoma.com/en/privacy/"},
     "hubilo.com": {"company":"Hubilo","service":"Hubilo Virtual Events","category":"analytics","severity":"medium","docs_url":"https://hubilo.com/privacy-policy/"},
+    "hubspot.com": {"company":"HubSpot","service":"HubSpot Platform (Umbrella)","category":"analytics","severity":"high","note":"Umbrella catches regional variants including track-eu1 / track-na1 (ptq.gif tracking pixel), api-eu1, etc.","docs_url":"https://knowledge.hubspot.com/reports/what-cookies-does-hubspot-set-in-a-visitor-s-browser"},
     "huggingface.co": {"company":"Hugging Face","service":"Hugging Face Hub","category":"analytics","severity":"medium","note":"AI model hub — tracks model downloads, API usage, and Spaces interactions","docs_url":"https://huggingface.co/privacy"},
     "ice.no": {"company":"Ice Group","service":"Ice Norway","category":"analytics","severity":"high","docs_url":"https://www.ice.no/personvern"},
     "icims.com": {"company":"iCIMS","service":"iCIMS Talent Cloud","category":"analytics","severity":"medium","docs_url":"https://www.icims.com/legal/privacy-policy/"},

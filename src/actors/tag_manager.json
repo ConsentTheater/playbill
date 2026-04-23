@@ -1,7 +1,7 @@
 {
   "category": "tag_manager",
   "description": "Tag management systems — container scripts that load other trackers",
-  "stats": { "cookies": 10, "domains": 33, "companies": 25 },
+  "stats": { "cookies": 10, "domains": 34, "companies": 25 },
   "cookies": {
     "_dc_gtm_*": {"company":"Google","service":"Google Tag Manager","category":"tag_manager","description":"Throttles request rate for Google Tag Manager container loading","severity":"medium","pattern":true,"lifetime":"1 minute","docs_url":"https://developers.google.com/tag-platform/tag-manager/web"},
     "_zaius_*": {"company":"Optimizely (Zaius)","service":"Zaius CDP","category":"tag_manager","description":"Zaius/Optimizely Data Platform cookie for B2C customer data collection and tag management","severity":"high","pattern":true,"lifetime":"1 year","docs_url":"https://www.optimizely.com/legal/privacy-policy/"},
@@ -40,6 +40,7 @@
     "collect.tealiumiq.com": {"company":"Tealium","service":"Tealium iQ","category":"tag_manager","severity":"high","docs_url":"https://docs.tealium.com/platforms/javascript/"},
     "ensighten.com": {"company":"Ensighten","service":"Ensighten Tag Manager","category":"tag_manager","severity":"medium","docs_url":"https://www.ensighten.com/privacy-policy/"},
     "googletagmanager.com": {"company":"Google","service":"Google Tag Manager","category":"tag_manager","severity":"medium","note":"Container script host; severity depends on tags loaded inside the container","docs_url":"https://developers.google.com/tag-platform/tag-manager"},
+    "hs-scripts.com": {"company":"HubSpot","service":"HubSpot Tracking Code (Regional CDN)","category":"tag_manager","severity":"high","note":"Umbrella catches regional variants (js-eu1, js-na1, js-au1, etc.)","docs_url":"https://knowledge.hubspot.com/reports/what-cookies-does-hubspot-set-in-a-visitor-s-browser"},
     "identity.mparticle.com": {"company":"mParticle","service":"mParticle Identity API","category":"tag_manager","severity":"high","docs_url":"https://www.mparticle.com/privacy/"},
     "js.hs-scripts.com": {"company":"HubSpot","service":"HubSpot Tracking Code (Tag)","category":"tag_manager","severity":"high","docs_url":"https://knowledge.hubspot.com/reports/what-cookies-does-hubspot-set-in-a-visitor-s-browser"},
     "jssdks.mparticle.com": {"company":"mParticle","service":"mParticle JS SDK","category":"tag_manager","severity":"high","docs_url":"https://www.mparticle.com/privacy/"},
