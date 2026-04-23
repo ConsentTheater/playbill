@@ -1,7 +1,7 @@
 {
   "category": "data_leak",
   "description": "Third-party resources that expose visitor IP addresses — fonts, embeds, CDNs, maps",
-  "stats": { "cookies": 0, "domains": 818, "companies": 566 },
+  "stats": { "cookies": 0, "domains": 819, "companies": 566 },
   "cookies": {
   },
   "domains": {
@@ -796,6 +796,7 @@
     "www.elster.de": {"company":"German Tax Authority","service":"ELSTER","category":"data_leak","severity":"high","docs_url":"https://www.elster.de/eportal/datenschutz"},
     "www.figma.com": {"company":"Figma","service":"Figma Embed","category":"data_leak","severity":"medium","docs_url":"https://www.figma.com/privacy/"},
     "www.gofundme.com/f": {"company":"GoFundMe","service":"GoFundMe Campaign Embed","category":"data_leak","severity":"medium","docs_url":"https://www.gofundme.com/privacy"},
+    "www.google.com": {"company":"Google","service":"Google Cross-Site Endpoint","category":"data_leak","severity":"medium","note":"Cross-origin requests to www.google.com on a non-Google site are almost always reCAPTCHA (/recaptcha/api.js), Google Fonts CSS, OAuth/Login, or Maps — all leak visitor IP to Google regardless of consent","docs_url":"https://policies.google.com/privacy"},
     "www.gov.uk": {"company":"UK Government","service":"GOV.UK","category":"data_leak","severity":"medium","note":"UK government services portal — browsing patterns reveal benefit claims, visa applications, tax filings, and health needs","docs_url":"https://www.gov.uk/help/privacy-notice"},
     "www.gov.uk/dwp": {"company":"DWP (UK)","service":"UK Department for Work and Pensions","category":"data_leak","severity":"high","note":"UK benefits and social security portal — browsing reveals claimant status and benefit types","docs_url":"https://www.gov.uk/government/organisations/department-for-work-pensions/about/personal-information-charter"},
     "www.gstatic.com": {"company":"Google","service":"Google Static Content","category":"data_leak","severity":"low","note":"Google static asset CDN — leaks visitor IP to Google on every page load","docs_url":"https://policies.google.com/technologies/cookies"},

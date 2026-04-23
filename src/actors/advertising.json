@@ -1,7 +1,7 @@
 {
   "category": "advertising",
   "description": "Ad targeting, retargeting, DSPs, SSPs, ad exchanges, conversion tracking, programmatic advertising",
-  "stats": { "cookies": 675, "domains": 1736, "companies": 1173 },
+  "stats": { "cookies": 675, "domains": 1737, "companies": 1174 },
   "cookies": {
     "1P_JAR": {"company":"Google","service":"Google","category":"advertising","description":"Gathers site statistics and tracks conversion rates for Google advertising campaigns","severity":"critical","lifetime":"30 days","docs_url":"https://policies.google.com/technologies/cookies"},
     "33x_*": {"company":"33Across","service":"33Across","category":"advertising","description":"33Across attention-based advertising identifier for viewability targeting","severity":"critical","pattern":true,"lifetime":"1 year","docs_url":"https://www.33across.com/privacy-policy/"},
@@ -2063,6 +2063,7 @@
     "t.stroeerdigitalmedia.de": {"company":"Ströer","service":"Ströer Digital","category":"advertising","severity":"critical","docs_url":"https://www.stroeer.de/en/privacy-policy"},
     "t.teads.tv": {"company":"Teads","service":"Teads","category":"advertising","severity":"critical","docs_url":"https://www.teads.com/privacy-policy/"},
     "t.unruly.co": {"company":"Unruly (Tremor International)","service":"Unruly Video Ads","category":"advertising","severity":"high","docs_url":"https://unruly.co/legal/privacy/"},
+    "t.vibe.co": {"company":"Vibe","service":"Vibe CTV Ad Tracking","category":"advertising","severity":"critical","note":"Connected TV (streaming) advertising telemetry — tracks ad exposure and attribution across CTV and web for cross-device profiling","docs_url":"https://www.vibe.co/privacy-policy"},
     "t.viralga.com": {"company":"ViralGains","service":"ViralGains Video Advertising","category":"advertising","severity":"high","docs_url":"https://www.viralgains.com/privacy-policy/"},
     "t.vlyby.com": {"company":"Vlyby","service":"Vlyby Interactive Video","category":"advertising","severity":"medium","docs_url":"https://www.vlyby.com/privacy-policy"},
     "t.wizaly.com": {"company":"Wizaly","service":"Wizaly Tracking","category":"advertising","severity":"high","docs_url":"https://www.wizaly.com/privacy-policy/"},

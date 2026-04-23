@@ -1,7 +1,7 @@
 {
   "category": "functional",
   "description": "Chat widgets, forms, payments, CMS features, support tools, loyalty programs, accessibility",
-  "stats": { "cookies": 419, "domains": 672, "companies": 522 },
+  "stats": { "cookies": 419, "domains": 673, "companies": 522 },
   "cookies": {
     ".AspNetCore.Antiforgery.*": {"company":"Microsoft","service":"ASP.NET Core","category":"functional","description":"ASP.NET Core anti-forgery system cookie for cross-site request forgery prevention","severity":"low","pattern":true,"lifetime":"session","docs_url":"https://learn.microsoft.com/en-us/aspnet/core/security/anti-request-forgery"},
     ".AspNetCore.Identity.Application": {"company":"Microsoft","service":"ASP.NET Core Identity","category":"functional","description":"ASP.NET Core Identity authentication cookie for maintaining user login state","severity":"low","lifetime":"14 days","docs_url":"https://learn.microsoft.com/en-us/aspnet/core/security/authentication/identity"},
@@ -827,6 +827,7 @@
     "honors.hilton.com": {"company":"Hilton","service":"Hilton Honors Loyalty","category":"functional","severity":"medium","docs_url":"https://www.hilton.com/en/corporate/privacy/"},
     "hub.docker.com": {"company":"Docker","service":"Docker Hub","category":"functional","severity":"low","docs_url":"https://www.docker.com/legal/privacy/"},
     "hub.loginradius.com": {"company":"LoginRadius","service":"LoginRadius Identity Hub","category":"functional","severity":"medium","docs_url":"https://www.loginradius.com/privacy-policy/"},
+    "hubspotusercontent-na1.net": {"company":"HubSpot","service":"HubSpot CMS User Content CDN","category":"functional","severity":"low","note":"HubSpot customer-hosted static assets (images, downloads, CMS files) served from the NA1 region. Pure CDN, but cross-origin load still reveals visitor IP to HubSpot","docs_url":"https://knowledge.hubspot.com/content-hub/the-difference-between-your-hubl-cms-domains"},
     "icomoon.io": {"company":"IcoMoon","service":"IcoMoon Icon CDN","category":"functional","severity":"low","docs_url":"https://icomoon.io/"},
     "icons.getbootstrap.com": {"company":"Bootstrap","service":"Bootstrap Icons CDN","category":"functional","severity":"low","docs_url":"https://icons.getbootstrap.com/"},
     "identitytoolkit.googleapis.com": {"company":"Google","service":"Firebase Auth API","category":"functional","severity":"medium","docs_url":"https://firebase.google.com/docs/auth/"},

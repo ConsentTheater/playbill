@@ -1,7 +1,7 @@
 {
   "category": "marketing",
   "description": "Email marketing, SMS, push notifications, CRM tracking, marketing automation, lead capture",
-  "stats": { "cookies": 182, "domains": 544, "companies": 373 },
+  "stats": { "cookies": 182, "domains": 545, "companies": 373 },
   "cookies": {
     "MCPopupClosed": {"company":"Mailchimp (Intuit)","service":"Mailchimp","category":"marketing","description":"Mailchimp popup closed cookie preventing dismissed subscription popups from re-appearing","severity":"low","lifetime":"1 year","docs_url":"https://mailchimp.com/legal/cookies/"},
     "MCPopupSubscribed": {"company":"Mailchimp (Intuit)","service":"Mailchimp","category":"marketing","description":"Mailchimp subscription state cookie hiding signup popups for already-subscribed visitors","severity":"low","lifetime":"1 year","docs_url":"https://mailchimp.com/legal/cookies/"},
@@ -567,6 +567,7 @@
     "hashnode.com/api": {"company":"Hashnode","service":"Hashnode API","category":"marketing","severity":"medium","docs_url":"https://hashnode.com/privacy"},
     "hopin.com": {"company":"Hopin","service":"Hopin Virtual Events","category":"marketing","severity":"medium","docs_url":"https://hopin.com/privacy"},
     "hs-banner.com": {"company":"HubSpot","service":"HubSpot Cookie Banner","category":"marketing","severity":"high","note":"Banner loader fingerprints the visitor (viewport, language, referrer) before the UI renders — occurs pre-consent","docs_url":"https://knowledge.hubspot.com/reports/what-cookies-does-hubspot-set-in-a-visitor-s-browser"},
+    "hsforms.com": {"company":"HubSpot","service":"HubSpot Forms (Regional CDN)","category":"marketing","severity":"high","note":"Umbrella catches regional variants (forms-na1, forms-eu1, perf-na1, etc.) of the HubSpot Forms embed and performance-tracking endpoints","docs_url":"https://knowledge.hubspot.com/reports/what-cookies-does-hubspot-set-in-a-visitor-s-browser"},
     "imgn.constantcontact.com": {"company":"Constant Contact","service":"Constant Contact Tracking","category":"marketing","severity":"high","docs_url":"https://www.constantcontact.com/legal/privacy-statement"},
     "imgssl.constantcontact.com": {"company":"Constant Contact","service":"Constant Contact Image Tracking","category":"marketing","severity":"high","note":"Constant Contact SSL image hosting used for email open tracking pixels","docs_url":"https://www.constantcontact.com/legal/privacy-statement"},
     "impressions.onelink.me": {"company":"AppsFlyer","service":"OneLink Impressions","category":"marketing","severity":"high","docs_url":"https://www.appsflyer.com/legal/privacy-policy/"},
