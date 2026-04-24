@@ -1,0 +1,64 @@
+name: Tracker catalogue correction
+description: A tracker entry is wrong, missing, or misclassified
+labels: ["tracker-data"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping keep the catalogue accurate.
+
+        Please include **primary evidence** (the vendor's own privacy policy,
+        a live network trace, their documentation, or the domain's WHOIS).
+        Secondary sources (other tracker lists) are not sufficient on their own.
+
+  - type: input
+    id: tracker
+    attributes:
+      label: Tracker / domain / cookie name
+      placeholder: "example.com  /  _ga  /  Acme Analytics"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: actor_file
+    attributes:
+      label: Which actor file does this belong to?
+      options:
+        - advertising
+        - analytics
+        - marketing
+        - functional
+        - social
+        - session_recording
+        - data_leak
+        - security
+        - consent
+        - fingerprinting
+        - tag_manager
+        - "not sure"
+    validations:
+      required: true
+
+  - type: textarea
+    id: whats-wrong
+    attributes:
+      label: What's wrong or missing?
+      description: Describe the correction — wrong company, missing domain, incorrect severity, wrong tier, etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Primary evidence
+      description: Links to the vendor's privacy policy, network capture, or other primary source.
+      placeholder: |
+        - https://vendor.example.com/privacy
+        - HAR excerpt showing the request
+    validations:
+      required: true
+
+  - type: textarea
+    id: more
+    attributes:
+      label: Additional context

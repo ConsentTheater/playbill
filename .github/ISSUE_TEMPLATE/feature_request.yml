@@ -1,0 +1,39 @@
+name: Feature request
+description: Suggest a new feature or improvement to the library
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement.
+
+        Reminder: this library is framework-agnostic, has no runtime
+        dependencies, and targets pure-function matching/scoring. Suggestions
+        that pull in heavy deps or tie the package to a specific framework
+        will probably be declined.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: Describe the user need or scenario.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: API shape, example usage, or behaviour you'd expect.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+
+  - type: textarea
+    id: more
+    attributes:
+      label: Additional context
