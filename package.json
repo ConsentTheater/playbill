@@ -1,7 +1,7 @@
 {
   "name": "@consenttheater/playbill",
   "version": "0.1.2",
-  "description": "An open-source, tiered knowledge base of GDPR-relevant web trackers (cookies, domains, companies) with pure-function matching and risk-scoring utilities. Standalone library for privacy auditors, compliance scanners, consent platforms, browser extensions, and research tools.",
+  "description": "An open-source, tiered knowledge base of GDPR-relevant web trackers (cookies, domains, companies) with pure-function matching helpers. Each entry is tagged with the consent burden it creates under EU/GDPR rules — no verdicts, no risk scores. Standalone library for privacy auditors, compliance scanners, consent platforms, browser extensions, and research tools.",
   "author": {
     "name": "ConsentTheater",
     "email": "developer@consenttheater.org",
@@ -49,10 +49,6 @@
     "./matcher": {
       "import": "./dist/matcher.js",
       "types": "./dist/matcher.d.ts"
-    },
-    "./scorer": {
-      "import": "./dist/scorer.js",
-      "types": "./dist/scorer.d.ts"
     },
     "./types": {
       "types": "./dist/types.d.ts"

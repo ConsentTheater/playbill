@@ -1,12 +1,35 @@
 /**
  * @consenttheater/playbill — Type definitions
  *
- * The Playbill is a theater program that lists every actor (tracker) and their role
- * (category/severity) on the web stage (website). These types define the shape of
- * that program.
+ * The Playbill is a theater program that lists every actor (tracker) and
+ * its role on the web stage. These types define the shape of that program.
+ *
+ * The library deliberately does **not** assign verdicts to whole websites
+ * or carry school-grade severity labels. It classifies trackers by the
+ * consent burden each one creates under EU/GDPR rules, leaves judgement
+ * to supervisory authorities and courts, and lets downstream consumers
+ * present the data however they like.
  */
 
-export type Severity = 'critical' | 'high' | 'medium' | 'low';
+/**
+ * How much explicit consent the tracker requires under GDPR / ePrivacy.
+ *
+ * - `required_strict` — Cross-site profiling, ad-tech retargeting,
+ *   fingerprinting, session recording. Always needs prior, informed,
+ *   freely-given consent.
+ * - `required`        — Standard analytics and marketing tracking.
+ *   Consent required in nearly all interpretations.
+ * - `contested`       — Tracking-adjacent or jurisdiction-dependent.
+ *   Some authorities allow under legitimate interest, others require
+ *   consent. Treat as consent-required by default.
+ * - `minimal`         — Functional, security, or strictly-necessary in
+ *   most interpretations. Often exempt from consent requirements.
+ */
+export type ConsentBurden =
+  | 'required_strict'
+  | 'required'
+  | 'contested'
+  | 'minimal';
 
 export type Category =
   | 'advertising' | 'analytics' | 'marketing' | 'functional'
@@ -21,7 +44,7 @@ export interface CookieActor {
   service: string;
   category: Category;
   description?: string;
-  severity: Severity;
+  consent_burden: ConsentBurden;
   pattern?: boolean;
   note?: string;
   lifetime?: string;
@@ -33,7 +56,7 @@ export interface DomainActor {
   company: string;
   service: string;
   category: Category;
-  severity: Severity;
+  consent_burden: ConsentBurden;
   note?: string;
   docs_url?: string;
 }
@@ -62,26 +85,4 @@ export interface CookieMatch extends CookieActor {
 export interface DomainMatch extends DomainActor {
   hostname: string;
   matchedDomain?: string;
-}
-
-/** Risk band derived from the compliance score. */
-export type BandKey = 'compliant' | 'at_risk' | 'non_compliant' | 'violating';
-
-export interface Band {
-  key: BandKey;
-  label: string;
-}
-
-export interface Violation {
-  type: string;
-  severity: Severity;
-  count: number;
-  description: string;
-  items?: Array<{ name?: string; hostname?: string; company?: string; note?: string }>;
-}
-
-export interface ScoreResult {
-  score: number;
-  band: Band;
-  violations: Violation[];
 }

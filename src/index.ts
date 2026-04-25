@@ -3,23 +3,43 @@
  *
  * The world's largest open-source GDPR tracker knowledge base.
  * Every cookie, every domain, every actor on the web stage —
- * identified, categorized, and scored.
+ * identified, categorised, and tagged with its consent burden.
+ *
+ * This library deliberately does **not** assign verdicts or scores. It
+ * gives you the facts about each tracker; what (if anything) you do with
+ * those facts is up to you. Consumers needing visualisation hierarchies
+ * (red / amber / green, "high risk", etc.) compute them in their own UI
+ * layer from the `consent_burden` and `category` fields.
  *
  * @example
  * ```ts
- * import { loadPlaybill, matchCookie, computeScore } from '@consenttheater/playbill';
+ * import { loadPlaybill, matchCookie } from '@consenttheater/playbill';
  *
- * const playbill = await loadPlaybill('core');
+ * const playbill = loadPlaybill('core');
  * const actor = matchCookie(playbill, '_ga');
+ * // actor?.consent_burden === 'required'
  * ```
  */
 
-export type { Playbill, CookieActor, DomainActor, CookieMatch, DomainMatch, Tier, Severity, Category, BandKey, Band, Violation, ScoreResult } from './types.js';
-export { matchCookie, matchDomain, isSameOrSubdomain, listCompanies, listCategories } from './matcher.js';
-export { computeScore, bandForScore, SEVERITY_WEIGHTS, BANDS } from './scorer.js';
-export type { ScoreInput, ObservedItem, ObservedBanner } from './scorer.js';
+export type {
+  Playbill,
+  CookieActor,
+  DomainActor,
+  CookieMatch,
+  DomainMatch,
+  Tier,
+  ConsentBurden,
+  Category
+} from './types.js';
+export {
+  matchCookie,
+  matchDomain,
+  isSameOrSubdomain,
+  listCompanies,
+  listCategories
+} from './matcher.js';
 
-import type { Playbill, Tier, CookieActor, DomainActor } from './types.js';
+import type { Playbill, Tier, CookieActor, DomainActor, ConsentBurden } from './types.js';
 
 // All actor category files
 import advertising from './actors/advertising.json' with { type: 'json' };
@@ -76,9 +96,9 @@ function uniqueCompanyCount(cookies: Record<string, CookieActor>, domains: Recor
   return set.size;
 }
 
-type EntryWithSeverity = { severity: string; company: string };
+type EntryWithBurden = { consent_burden: ConsentBurden; company: string };
 
-function filterEntries<T extends EntryWithSeverity>(
+function filterEntries<T extends EntryWithBurden>(
   entries: Record<string, T>,
   filterFn: (entry: T, topCompanies: Set<string>) => boolean,
   topCompanies: Set<string>
@@ -90,21 +110,23 @@ function filterEntries<T extends EntryWithSeverity>(
   return result;
 }
 
-const TIER_FILTERS: Record<Tier, (entry: EntryWithSeverity, topCompanies: Set<string>) => boolean> = {
+const CONSENT_REQUIRED: readonly ConsentBurden[] = ['required_strict', 'required', 'contested'];
+
+const TIER_FILTERS: Record<Tier, (entry: EntryWithBurden, topCompanies: Set<string>) => boolean> = {
   mini: (entry, topCompanies) =>
-    (entry.severity === 'critical' || entry.severity === 'high') &&
+    (entry.consent_burden === 'required_strict' || entry.consent_burden === 'required') &&
     topCompanies.has(entry.company),
-  core: (entry) =>
-    entry.severity === 'critical' || entry.severity === 'high' || entry.severity === 'medium',
+  core: (entry) => CONSENT_REQUIRED.includes(entry.consent_burden),
   full: () => true
 };
 
 /**
- * Load a playbill tier by merging actor category files and filtering by severity.
+ * Load a playbill tier by merging actor category files and filtering by
+ * consent burden.
  *
- * @param tier - 'mini' (~50 top companies, critical+high only),
- *               'core' (all critical+high+medium),
- *               'full' (everything)
+ * @param tier - 'mini' (~50 top companies, required_strict + required only),
+ *               'core' (all entries that require or might require consent),
+ *               'full' (everything, including minimal-burden entries)
  */
 export function loadPlaybill(tier: Tier = 'full'): Playbill {
   const { cookies: allCookies, domains: allDomains } = mergeActors(ALL_ACTORS);
@@ -115,7 +137,7 @@ export function loadPlaybill(tier: Tier = 'full'): Playbill {
   const domains = filterEntries(allDomains, filter, topCompanies);
 
   return {
-    version: 2,
+    version: 3,
     tier,
     generated: new Date().toISOString(),
     stats: {
@@ -141,7 +163,7 @@ export function loadActors(categories: string[]): Playbill {
   const { cookies, domains } = mergeActors(selected);
 
   return {
-    version: 2,
+    version: 3,
     tier: 'full',
     generated: new Date().toISOString(),
     stats: {

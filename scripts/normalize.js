@@ -35,7 +35,7 @@ function findDuplicatesInRawJson(filePath) {
       const key = match[1];
       // Skip meta keys
       if (['category', 'description', 'stats', 'cookies', 'domains', 'company', 'service',
-           'severity', 'note', 'docs_url', 'lifetime', 'pattern'].includes(key)) continue;
+           'consent_burden', 'note', 'docs_url', 'lifetime', 'pattern'].includes(key)) continue;
       if (!seen.has(key)) seen.set(key, []);
       seen.get(key).push(i + 1);
     }
