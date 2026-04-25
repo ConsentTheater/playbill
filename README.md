@@ -6,9 +6,9 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Node](https://img.shields.io/node/v/@consenttheater/playbill.svg)](package.json)
 
-**The Playbill** — an open-source, tiered knowledge base of GDPR-relevant web trackers, with pure-function matching and risk-scoring utilities.
+**The Playbill** — an open-source, tiered knowledge base of GDPR-relevant web trackers, with pure-function matching helpers. Each entry is tagged with the **consent burden** it creates under EU/GDPR rules. No verdicts, no risk scores — just facts you can build on.
 
-A theater playbill lists every actor and their role on stage. This package does the same for the web: every tracking cookie, every tracking domain, every company behind them — identified, categorized, and scored against GDPR.
+A theater playbill lists every actor and their role on stage. This package does the same for the web: every tracking cookie, every tracking domain, every company behind them — identified, categorised, and labelled with how much consent work each one creates.
 
 A standalone library — no browser dependencies, no runtime side effects, no lock-in. Useful for anyone building privacy tooling:
 
@@ -19,44 +19,44 @@ A standalone library — no browser dependencies, no runtime side effects, no lo
 - Academic research, regulatory studies, journalism projects
 - Your own privacy tools, commercial or otherwise (subject to the AGPL — see License)
 
+## Why no scoring?
+
+Earlier releases (v0.1.x) shipped a `computeScore()` helper that produced a 0–100 compliance score and "compliant / violating" risk bands for whole sites. We removed it in v0.2.0.
+
+Whether a site complies with GDPR is the work of supervisory authorities and courts. We are an evidence library, not a regulator. Downstream consumers — extensions, scanners, dashboards — can compute whatever ranking they want from the raw `consent_burden` and `category` fields. Keeping the judgement layer out of this package is the cleanest way to stay neutral.
+
 ## What's in the Playbill
 
-- **Cookie signatures** — name, owning company, service, purpose, severity, lifetime, docs link
-- **Domain signatures** — hostname, owning company, service, category, severity
+- **Cookie signatures** — name, owning company, service, purpose, consent burden, lifetime, docs link
+- **Domain signatures** — hostname, owning company, service, category, consent burden
 - **2,800+ companies** — from Google and Meta to regional EU ad networks and niche SaaS tools
 - **8,000+ entries** across 11 categories — one of the largest AGPL-licensed tracker databases available
 - **Matching utilities** — exact + pattern (trailing `*`) cookie matching, exact + subdomain hostname matching
-- **Scoring utilities** — GDPR-weighted compliance score with four risk bands
 
 ### Current stats
 
 | Metric | Count |
 |--------|-------|
-| Cookie signatures | 2,307 |
-| Domain signatures | 6,297 |
-| Total entries | 8,604 |
-| Unique companies | 2,839 |
+| Cookie signatures | 2,197 |
+| Domain signatures | 5,936 |
+| Total entries | 8,133 |
+| Unique companies | 2,829 |
 | Categories | 11 |
 
 ## Tiers
 
 Choose what you need — everything is **computed at runtime** from a single set of source files, no pre-built tier bundles to drift out of sync:
 
-| Tier | Entries | Companies | Size (gzip) | Use case |
-|------|---------|-----------|-------------|----------|
-| `mini` | ~620 | ~45 | ~25 KB | Lightweight widgets, top-50 company quick checks |
-| `core` | ~7,000 | ~2,470 | ~275 KB | CI/CD scanners, most compliance tools |
-| `full` | ~8,100 | ~2,825 | ~320 KB | Complete audits, regional/niche coverage |
-
-**Tier semantics:**
-- `mini` — top 50 companies by entry count, `critical` + `high` severity only
-- `core` — all `critical` + `high` + `medium` severity, any company
-- `full` — everything, including `low` severity, regional, and niche
+| Tier | Selection | Use case |
+|------|-----------|----------|
+| `mini` | Top 50 companies; `required_strict` + `required` only | Lightweight widgets, top-50 company quick checks |
+| `core` | All consent-requiring entries (`required_strict`, `required`, `contested`) | CI/CD scanners, most compliance tools |
+| `full` | Everything, including `minimal`-burden entries | Complete audits, regional/niche coverage |
 
 ## Usage
 
 ```ts
-import { loadPlaybill, matchCookie, matchDomain, computeScore } from '@consenttheater/playbill';
+import { loadPlaybill, matchCookie, matchDomain } from '@consenttheater/playbill';
 
 // Load the tier you need
 const playbill = loadPlaybill('core');
@@ -68,7 +68,7 @@ const cookie = matchCookie(playbill, '_ga');
 //     company: 'Google',
 //     service: 'Google Analytics',
 //     category: 'analytics',
-//     severity: 'high',
+//     consent_burden: 'required',
 //     description: 'Distinguishes unique users...',
 //     lifetime: '2 years',
 //     docs_url: 'https://developers.google.com/...'
@@ -77,18 +77,7 @@ const cookie = matchCookie(playbill, '_ga');
 // Identify a domain (exact or subdomain match)
 const domain = matchDomain(playbill, 'connect.facebook.net');
 // → { hostname: 'connect.facebook.net', company: 'Meta',
-//     service: 'Meta Pixel', category: 'advertising', severity: 'critical' }
-
-// Score a page's compliance against GDPR
-const result = computeScore({
-  preConsentCookies: [cookie],
-  preConsentRequests: [domain],
-  dataLeakRequests: [],
-  banner: { detected: true, hasAcceptButton: true, hasRejectButton: false }
-});
-// → { score: 45,
-//     band: { key: 'non_compliant', label: 'Non-Compliant' },
-//     violations: [...] }
+//     service: 'Meta Pixel', category: 'advertising', consent_burden: 'required_strict' }
 ```
 
 ### Loading individual categories
@@ -113,14 +102,13 @@ import dataLeak from '@consenttheater/playbill/actors/data-leak';
 //       consent, fingerprinting, tag-manager
 ```
 
-### Matcher-only / scorer-only
+### Matcher-only
 
-If you only need matching (no scoring) or scoring (no DB):
+If you only need matching (and want to skip importing the bundled actor JSON):
 
 ```ts
 import { matchCookie, matchDomain } from '@consenttheater/playbill/matcher';
-import { computeScore, bandForScore, SEVERITY_WEIGHTS, BANDS } from '@consenttheater/playbill/scorer';
-import type { Playbill, CookieActor, ScoreResult } from '@consenttheater/playbill/types';
+import type { Playbill, CookieActor } from '@consenttheater/playbill/types';
 ```
 
 ## Categories
@@ -141,27 +129,20 @@ import type { Playbill, CookieActor, ScoreResult } from '@consenttheater/playbil
 
 ### The `data_leak` category is special
 
-Entries scored as `data_leak` (Google Fonts, Typekit, YouTube embeds, Google Maps, etc.) are counted as violations **even after consent**. Rationale: the Austrian DPA ruling (2022) and LG München judgments hold that IP exfiltration to third parties violates GDPR regardless of consent, because the request fires before any dialog can mediate.
+Entries categorised as `data_leak` (Google Fonts, Typekit, YouTube embeds, Google Maps, etc.) are noteworthy **even after consent**. Rationale: the Austrian DPA ruling (2022) and LG München judgments hold that IP exfiltration to third parties is a separate concern from cookie consent, because the request fires before any dialog can mediate. We tag the entries; how you treat them in your UI is your call.
 
-## Severity levels
+## Consent burden
 
-| Severity | GDPR weight | Meaning |
-|----------|-------------|---------|
-| `critical` | -25 points | Ad/retargeting trackers — clear GDPR violation if set before consent |
-| `high` | -15 points | Analytics without legal basis; banner missing reject option |
-| `medium` | -10 points | Session recording, data leaks — elevated risk exposure |
-| `low` | -5 points | Functional/security — typically exempt under legitimate interest |
+Every entry carries a `consent_burden` value describing how much explicit consent the tracker needs under GDPR / ePrivacy.
 
-## Risk bands
+| Value | Meaning | Examples |
+|-------|---------|----------|
+| `required_strict` | Cross-site profiling, ad-tech retargeting, fingerprinting, session recording. Always needs prior, informed, freely-given consent. | DoubleClick, Meta Pixel, Hotjar, FingerprintJS |
+| `required` | Standard analytics and marketing tracking. Consent required in nearly all interpretations. | Google Analytics, Mixpanel, HubSpot tracking |
+| `contested` | Tracking-adjacent or jurisdiction-dependent. Some authorities allow under legitimate interest, others require consent. Treat as consent-required by default. | Some session storage IDs, certain CDP cookies |
+| `minimal` | Functional, security, or strictly-necessary in most interpretations. Often exempt from consent requirements. | CSRF tokens, language preferences, opt-out flags |
 
-`computeScore()` returns one of four bands based on the total score (100 − Σ weights):
-
-| Score | Band | Meaning |
-|-------|------|---------|
-| ≥ 90 | `compliant` | GDPR-clean or near-clean |
-| 70–89 | `at_risk` | Minor issues — one critical violation drops you here |
-| 40–69 | `non_compliant` | Two critical violations or equivalent |
-| < 40 | `violating` | Four+ critical violations; systemic failure |
+These labels describe **what kind of GDPR work the tracker creates**, not whether any particular site is compliant. Two trackers in the same category can carry different burdens depending on the operator's role and how they're used.
 
 ## Pattern cookies
 
@@ -182,9 +163,7 @@ import type {
   Playbill, Tier,
   CookieActor, DomainActor,
   CookieMatch, DomainMatch,
-  Severity, Category,
-  ScoreInput, ScoreResult, Violation,
-  Band, BandKey,
+  ConsentBurden, Category
 } from '@consenttheater/playbill';
 ```
 
@@ -196,12 +175,12 @@ The AGPL is a deliberate choice: the tracker knowledge encoded here represents s
 
 ## Contributing
 
-Found a tracker we're missing? Want to fix an incorrect severity or update a lifetime? PRs welcome.
+Found a tracker we're missing? Want to correct a `consent_burden` value or update a lifetime? PRs welcome.
 
 Each entry needs:
 - Cookie name or domain
 - Owning company and service name
-- Category and severity
+- Category and `consent_burden`
 - One-sentence description
 - Cookie lifetime (for cookies)
 - Link to official documentation
@@ -211,3 +190,14 @@ After editing any file under `src/actors/`, run:
 ```sh
 npm run normalize   # sorts keys, reformats, flags duplicates, updates stats
 ```
+
+## Migrating from v0.1.x
+
+v0.2.0 is a breaking change. See [CHANGELOG.md](./CHANGELOG.md) for the full migration guide. In short:
+
+- `severity` field renamed to `consent_burden` with descriptive labels:
+  - `critical` → `required_strict`
+  - `high` → `required`
+  - `medium` → `contested`
+  - `low` → `minimal`
+- The whole `scorer` module (`computeScore`, `bandForScore`, `SEVERITY_WEIGHTS`, `BANDS`, `Violation`, `ScoreResult`, `Band`, `BandKey`) was removed. Compute presentation hierarchies in your own UI layer.
