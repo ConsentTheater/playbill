@@ -1,7 +1,7 @@
 {
   "category": "consent",
   "description": "Consent Management Platforms (CMPs) — cookie banners, consent storage, preference management",
-  "stats": { "cookies": 43, "domains": 46, "companies": 43 },
+  "stats": { "cookies": 44, "domains": 46, "companies": 43 },
   "cookies": {
     "CookieConsent": {"company":"Cookiebot","service":"Cookiebot CMP","category":"consent","description":"Cookiebot consent cookie storing user consent state per category (necessary/preferences/statistics/marketing)","consent_burden":"minimal","lifetime":"1 year","docs_url":"https://www.cookiebot.com/en/privacy-policy/"},
     "CookieLawInfoConsent": {"company":"Cookie Law Info","service":"Cookie Law Info (WP)","category":"consent","description":"Cookie Law Info consent state cookie recording yes/no acceptance for each cookie category","consent_burden":"minimal","lifetime":"1 year","docs_url":"https://developer.wordpress.org/plugins/privacy/"},
@@ -40,6 +40,7 @@
     "securiti_*": {"company":"Securiti.ai","service":"Securiti Consent Manager","category":"consent","description":"Securiti.ai consent management platform cookie storing user privacy preferences","consent_burden":"minimal","pattern":true,"lifetime":"1 year","docs_url":"https://securiti.ai/privacy-policy/"},
     "sp_consent_*": {"company":"Sourcepoint","service":"Sourcepoint CMP","category":"consent","description":"Sourcepoint consent management cookie storing TCF and custom vendor consent decisions","consent_burden":"minimal","pattern":true,"lifetime":"1 year","docs_url":"https://www.sourcepoint.com/privacy-policy"},
     "tarteaucitron": {"company":"CNIL/Tarteaucitron","service":"Tarteaucitron CMP","category":"consent","description":"French open-source consent management platform storing user cookie preferences per service","consent_burden":"minimal","lifetime":"1 year","docs_url":"https://tarteaucitron.io/en/"},
+    "tcm": {"company":"Transcend","service":"Transcend Consent Manager","category":"consent","description":"Transcend Consent Manager (TCM) state cookie storing per-category consent choices","consent_burden":"minimal","lifetime":"1 year","docs_url":"https://transcend.io/privacy"},
     "termly_gtm_*": {"company":"Termly","service":"Termly CMP","category":"consent","description":"Termly consent management cookie for Google Tag Manager consent mode integration","consent_burden":"minimal","pattern":true,"lifetime":"1 year","docs_url":"https://help.termly.io/support/solutions"},
     "transcend_*": {"company":"Transcend","service":"Transcend Consent Manager","category":"consent","description":"Transcend consent management cookie recording user opt-in/opt-out preferences","consent_burden":"minimal","pattern":true,"lifetime":"1 year","docs_url":"https://transcend.io/privacy"},
     "uc_settings": {"company":"Usercentrics","service":"Usercentrics CMP","category":"consent","description":"Usercentrics consent settings cookie storing user privacy preferences per service","consent_burden":"minimal","lifetime":"1 year","docs_url":"https://docs.usercentrics.com/"},

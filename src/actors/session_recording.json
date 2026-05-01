@@ -1,7 +1,7 @@
 {
   "category": "session_recording",
   "description": "Heatmaps, session replays, screen recording, click tracking, scroll tracking",
-  "stats": { "cookies": 70, "domains": 91, "companies": 53 },
+  "stats": { "cookies": 70, "domains": 90, "companies": 53 },
   "cookies": {
     "ANONCHK": {"company":"Microsoft","service":"Microsoft Clarity","category":"session_recording","description":"Indicates whether MUID is transferred to ANID, used for advertising purposes by Microsoft","consent_burden":"contested","lifetime":"10 minutes","docs_url":"https://learn.microsoft.com/en-us/clarity/setup-and-installation/cookie-list"},
     "CLID": {"company":"Microsoft","service":"Microsoft Clarity","category":"session_recording","description":"Identifies the first time Clarity saw this user on any site using Clarity","consent_burden":"contested","lifetime":"1 year","docs_url":"https://learn.microsoft.com/en-us/clarity/setup-and-installation/cookie-list"},
@@ -147,7 +147,6 @@
     "hn.inspectlet.com": {"company":"Inspectlet","service":"Inspectlet","category":"session_recording","consent_burden":"contested","docs_url":"https://www.inspectlet.com/legal"},
     "in.hotjar.com": {"company":"Hotjar","service":"Hotjar Data Ingestion","category":"session_recording","consent_burden":"contested","docs_url":"https://help.hotjar.com/hc/en-us/articles/115011789248-Hotjar-Cookie-Information"},
     "insights.hotjar.com": {"company":"Hotjar","service":"Hotjar Insights API","category":"session_recording","consent_burden":"contested","docs_url":"https://help.hotjar.com/hc/en-us/articles/115011789248-Hotjar-Cookie-Information"},
-    "js-agent.newrelic.com": {"company":"New Relic","service":"New Relic Browser Session Replay","category":"session_recording","consent_burden":"contested","docs_url":"https://docs.newrelic.com/docs/browser/browser-monitoring/browser-pro-features/session-replay/"},
     "js-agent.newrelic.com/replay": {"company":"New Relic","service":"New Relic Browser Replay","category":"session_recording","consent_burden":"required_strict","docs_url":"https://newrelic.com/termsandconditions/privacy"},
     "js.userpilot.io": {"company":"Userpilot","service":"Userpilot SDK","category":"session_recording","consent_burden":"required","docs_url":"https://userpilot.com/privacy-policy/"},
     "o*.ingest.sentry.io": {"company":"Sentry","service":"Sentry Replay Ingestion","category":"session_recording","consent_burden":"required_strict","pattern":true,"docs_url":"https://sentry.io/privacy/"},

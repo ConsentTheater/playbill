@@ -1,7 +1,7 @@
 {
   "category": "social",
   "description": "Social media embeds, sharing widgets, social login, social plugins",
-  "stats": { "cookies": 74, "domains": 251, "companies": 133 },
+  "stats": { "cookies": 74, "domains": 248, "companies": 132 },
   "cookies": {
     "APISID": {"company":"Google","service":"Google Accounts","category":"social","description":"Google API session identifier for authenticating YouTube embeds and Google integrations","consent_burden":"contested","lifetime":"2 years","docs_url":"https://policies.google.com/technologies/cookies"},
     "GPS": {"company":"Google","service":"YouTube","category":"social","description":"YouTube GPS cookie for recording geolocation data on mobile devices viewing embedded videos","consent_burden":"required","lifetime":"30 minutes","docs_url":"https://policies.google.com/technologies/cookies"},
@@ -82,7 +82,6 @@
     "500px.com/photo": {"company":"500px (VCG)","service":"500px Photo Embed","category":"social","consent_burden":"contested","docs_url":"https://500px.com/privacy"},
     "accounts.google.com": {"company":"Google","service":"Google Sign-In","category":"social","consent_burden":"contested","note":"Google Sign-In OAuth widget leaks visitor identity to Google when embedded as social login","docs_url":"https://developers.google.com/identity/gsi/web/guides/overview"},
     "airtable.com/embed": {"company":"Airtable","service":"Airtable Embed","category":"social","consent_burden":"contested","docs_url":"https://www.airtable.com/privacy"},
-    "alb.reddit.com": {"company":"Reddit","service":"Reddit","category":"social","consent_burden":"contested","docs_url":"https://www.redditinc.com/policies/cookies"},
     "anchor.fm": {"company":"Spotify","service":"Spotify for Podcasters","category":"social","consent_burden":"required","docs_url":"https://www.spotify.com/legal/cookies-policy/"},
     "anchor.fm/embed": {"company":"Spotify (Anchor)","service":"Anchor Podcast Embed","category":"social","consent_burden":"required","docs_url":"https://www.spotify.com/legal/cookies-policy/"},
     "api-2-0.spot.im": {"company":"OpenWeb","service":"OpenWeb Comments","category":"social","consent_burden":"required","docs_url":"https://www.openweb.com/legal-and-privacy/privacy/"},
@@ -156,7 +155,6 @@
     "embed.wistia.com": {"company":"Wistia","service":"Wistia Embed (Social)","category":"social","consent_burden":"contested","docs_url":"https://wistia.com/privacy"},
     "embed.wistia.com/deliveries": {"company":"Wistia","service":"Wistia Video Delivery","category":"social","consent_burden":"contested","docs_url":"https://wistia.com/privacy"},
     "f.vimeocdn.com": {"company":"Vimeo","service":"Vimeo Fast CDN","category":"social","consent_burden":"contested","docs_url":"https://vimeo.com/cookie_policy"},
-    "fast.wistia.com": {"company":"Wistia","service":"Wistia Fast Player","category":"social","consent_burden":"contested","docs_url":"https://wistia.com/privacy"},
     "ghost.io": {"company":"Ghost","service":"Ghost Publishing","category":"social","consent_burden":"minimal","docs_url":"https://ghost.org/privacy/"},
     "giphy.com": {"company":"Giphy","service":"Giphy (Meta)","category":"social","consent_burden":"required","note":"Giphy embeds transmit viewer data to Meta since the 2020 acquisition","docs_url":"https://giphy.com/privacy"},
     "gist.github.com": {"company":"GitHub (Microsoft)","service":"GitHub Gist Embed","category":"social","consent_burden":"contested","docs_url":"https://docs.github.com/en/site-policy/privacy-policies"},
@@ -234,7 +232,6 @@
     "s7.addthis.com": {"company":"Oracle","service":"AddThis","category":"social","consent_burden":"required_strict","docs_url":"https://www.addthis.com/privacy"},
     "shadow.tech": {"company":"Shadow","service":"Shadow Cloud PC","category":"social","consent_burden":"required","docs_url":"https://shadow.tech/privacy-policy"},
     "share.transistor.fm": {"company":"Transistor","service":"Transistor Podcast Embed","category":"social","consent_burden":"minimal","docs_url":"https://transistor.fm/privacy/"},
-    "snap.licdn.com": {"company":"LinkedIn (Microsoft)","service":"LinkedIn Embed Assets","category":"social","consent_burden":"required","docs_url":"https://www.linkedin.com/legal/privacy-policy"},
     "soundcloud.com": {"company":"SoundCloud","service":"SoundCloud","category":"social","consent_burden":"contested","docs_url":"https://soundcloud.com/pages/cookies"},
     "speakerdeck.com": {"company":"Speaker Deck","service":"Speaker Deck Embed","category":"social","consent_burden":"minimal","docs_url":"https://speakerdeck.com/privacy"},
     "stackblitz.com": {"company":"StackBlitz","service":"StackBlitz IDE Embed","category":"social","consent_burden":"contested","docs_url":"https://stackblitz.com/privacy-policy"},

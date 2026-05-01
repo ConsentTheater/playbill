@@ -1,7 +1,7 @@
 {
   "category": "data_leak",
   "description": "Third-party resources that expose visitor IP addresses — fonts, embeds, CDNs, maps",
-  "stats": { "cookies": 0, "domains": 821, "companies": 568 },
+  "stats": { "cookies": 0, "domains": 826, "companies": 568 },
   "cookies": {
   },
   "domains": {
@@ -799,6 +799,11 @@
     "www.figma.com": {"company":"Figma","service":"Figma Embed","category":"data_leak","consent_burden":"contested","docs_url":"https://www.figma.com/privacy/"},
     "www.gofundme.com/f": {"company":"GoFundMe","service":"GoFundMe Campaign Embed","category":"data_leak","consent_burden":"contested","docs_url":"https://www.gofundme.com/privacy"},
     "www.google.com": {"company":"Google","service":"Google Cross-Site Endpoint","category":"data_leak","consent_burden":"contested","note":"Cross-origin requests to www.google.com on a non-Google site are almost always reCAPTCHA (/recaptcha/api.js), Google Fonts CSS, OAuth/Login, or Maps — all leak visitor IP to Google regardless of consent","docs_url":"https://policies.google.com/privacy"},
+    "www.google.com/ccm/collect": {"company":"Google","service":"Google Customer Match Connect","category":"data_leak","consent_burden":"required_strict","note":"Google Customer Match Connect — first-party data ingest endpoint. Sends hashed PII (emails, phone numbers) plus event metadata to Google Ads for audience matching. Used by consent-mode-aware deployments to bypass third-party cookie restrictions","docs_url":"https://support.google.com/google-ads/answer/6379332"},
+    "www.google.com/gmp/conversion": {"company":"Google","service":"Google Marketing Platform Enhanced Conversions","category":"data_leak","consent_burden":"required_strict","note":"Google Marketing Platform Enhanced Conversions — sends hashed PII (typically email + name) as URL parameters for cross-device conversion attribution","docs_url":"https://support.google.com/google-ads/answer/13258081"},
+    "www.google.com/pagead/1p-conversion": {"company":"Google","service":"Google Ads First-Party Conversion","category":"data_leak","consent_burden":"required_strict","note":"Google Ads First-Party Conversion endpoint — server-side-style conversion reporting through the visitor's browser. Consent-mode workaround that bypasses third-party-cookie restrictions","docs_url":"https://support.google.com/google-ads/answer/14778942"},
+    "www.google.com/pagead/1p-user-list": {"company":"Google","service":"Google Ads First-Party Audience List","category":"data_leak","consent_burden":"required_strict","note":"Google Ads First-Party Audience List — the '1p' is literal. Successor to third-party-cookie-based audience targeting after Chrome's Privacy Sandbox transition. Sends visitor data to Google Ads to maintain audience membership","docs_url":"https://support.google.com/google-ads/answer/12224748"},
+    "www.google.com/rmkt/collect": {"company":"Google","service":"Google Ads Remarketing Collect","category":"data_leak","consent_burden":"required_strict","note":"Google Ads Remarketing collect endpoint — fires for retargeting audience membership. Equivalent to a remarketing pixel via the gtag library","docs_url":"https://support.google.com/google-ads/answer/2453998"},
     "www.gov.uk": {"company":"UK Government","service":"GOV.UK","category":"data_leak","consent_burden":"contested","note":"UK government services portal — browsing patterns reveal benefit claims, visa applications, tax filings, and health needs","docs_url":"https://www.gov.uk/help/privacy-notice"},
     "www.gov.uk/dwp": {"company":"DWP (UK)","service":"UK Department for Work and Pensions","category":"data_leak","consent_burden":"required","note":"UK benefits and social security portal — browsing reveals claimant status and benefit types","docs_url":"https://www.gov.uk/government/organisations/department-for-work-pensions/about/personal-information-charter"},
     "www.gstatic.com": {"company":"Google","service":"Google Static Content","category":"data_leak","consent_burden":"minimal","note":"Google static asset CDN — leaks visitor IP to Google on every page load","docs_url":"https://policies.google.com/technologies/cookies"},
