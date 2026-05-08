@@ -29,18 +29,18 @@ Whether a site complies with GDPR is the work of supervisory authorities and cou
 
 - **Cookie signatures** — name, owning company, service, purpose, consent burden, lifetime, docs link
 - **Domain signatures** — hostname, owning company, service, category, consent burden
-- **2,800+ companies** — from Google and Meta to regional EU ad networks and niche SaaS tools
-- **8,000+ entries** across 11 categories — one of the largest AGPL-licensed tracker databases available
+- **2,900+ companies** — from Google and Meta to regional EU ad networks and niche SaaS tools
+- **10,000+ entries** across 11 categories — one of the largest AGPL-licensed tracker databases available
 - **Matching utilities** — exact + pattern (trailing `*`) cookie matching, exact + subdomain hostname matching
 
 ### Current stats
 
 | Metric | Count |
 |--------|-------|
-| Cookie signatures | 2,197 |
-| Domain signatures | 5,936 |
-| Total entries | 8,133 |
-| Unique companies | 2,829 |
+| Cookie signatures | 4,119 |
+| Domain signatures | 6,385 |
+| Total entries | 10,504 |
+| Unique companies | 2,986 |
 | Categories | 11 |
 
 ## Tiers
