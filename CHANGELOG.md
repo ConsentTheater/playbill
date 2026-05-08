@@ -5,6 +5,100 @@ All notable changes to `@consenttheater/playbill` are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.0] — 2026-05-09
+
+### Highlights
+
+Catalogue grew from 8,664 to 10,504 entries (+21%, +1,842). Cookies nearly
+doubled (2,340 → 4,119, +76%). 71 long-standing cross-file company-mismatch
+attributions reported by `normalize.js` are zeroed out. A focused re-
+classification moved 413 confident ad-tech entries (DSPs, SSPs, DMPs,
+retargeting networks) from `marketing` to `advertising` with `consent_burden`
+upgraded to `required_strict`.
+
+### Data — new entries
+
+- 1,794 new cookies + 131 new domains across `analytics`, `marketing`,
+  `functional`, and `security`. See *Acknowledgements* below for the
+  upstream community source we want to credit.
+- ShortPixel image-optimisation CDN: `shortpixel.ai`, `cdn.shortpixel.ai`,
+  `shortpixel.io`, `shortpixel.com`, `api.shortpixel.com`
+  (`functional`/`minimal`).
+
+### Data — cross-file company-mismatch cleanup
+
+71 cases of the same cookie/domain key attributed to different companies
+across actor files resolved across four root causes:
+
+- **4 self-name-vs-domain** — entries had `company` set to a domain string
+  (e.g. `Branch.io`, `Split.io`) instead of the proper company name.
+  Domain-named entries removed.
+- **8 known-related** — subsidiary / parent / rebrand pairs (Salesforce
+  DMP/Krux, Atlassian/Loom, Block/Afterpay, etc.). Canonical attribution
+  kept; redundant entries removed.
+- **40 name-format-diff** — same company under slightly different formats
+  (`Heap` vs `Heap (Contentsquare)`, `Adjust` vs `Adjust (AppLovin)`,
+  `OpenStreetMap` vs `OpenStreetMap Foundation`, etc.). Pure category
+  disputes — kept the entry in the most accurate category.
+- **19 distinct-company** — real attribution conflicts including
+  misattributed cookies: `_fs_uid` was attributed to "FullSession" but is
+  actually FullStory; `_lr_env_src_ats` to LogRocket but is actually
+  LiveRamp ATS; `csrftoken` to Meta but is actually Django; `match.prod
+  .bidr.io` to RhythmOne but is actually Beeswax (Comcast); `_lr_env_src
+  _ats` to LogRocket but is LiveRamp ATS; `prebid.adnxs.com` re-attributed
+  to advertising/Xandr (Microsoft) instead of fingerprinting; `top.mail
+  .ru` re-attributed to analytics/MyTracker; `addtl_consent` and
+  `usprivacy` re-attributed to consent (IAB-managed signals) rather than
+  generic functional.
+
+### Data — ad-tech re-routing
+
+413 entries moved from `marketing.json` → `advertising.json` with
+`consent_burden` upgraded to `required_strict`. Affected vendors include
+Nexx360, Epsilon, Outbrain, Adform, Yieldmo, Equativ (formerly Smart
+AdServer), Adhese, Sonobi, Groovinads, Magnite (formerly Rubicon Project),
+Smaato, Perfect Audience, Teads, ID5, PubMatic, Platform161, Ortec,
+Seedtag, Lotame, Zeotap, MediaMath, OpenX, Admatic, MediaVine, Audrte,
+Acuity, Emetric, 33Across, Atlas, Tappx, Xandr, richAudience, LiveRamp,
+JustPremium, LiveIntent, Underdog Media, TripleLift, plus single-entry
+confident-ad-tech entries (Snapchat ads, RTB House, Pangle, Vidoomy,
+Roku ad-sync, Demandbase, Tapad, ComScore, etc.).
+
+Mixed-type companies (Adobe, Microsoft, Google, Meta, Facebook, LinkedIn,
+HubSpot/Clearbit) deliberately **NOT included** — their entries span both
+categories and need entry-by-entry review in a future pass.
+
+### Compatibility
+
+No API changes. Two semantic shifts that downstream consumers will
+notice:
+
+- 413 entries that previously appeared in `marketing` rollups now appear
+  in `advertising`. Consumers filtering by `category === 'marketing'` will
+  see fewer results; `advertising` grows by the same amount. The new
+  `marketing` set is closer to its label — email/SMS/push, CRM
+  automation, lead capture, loyalty programmes — without the ad-tech
+  noise.
+- Those same 413 entries had `consent_burden: 'required'` and now have
+  `consent_burden: 'required_strict'`. UIs that bucket consent burden
+  into display levels will see those entries shift up one level. The new
+  burden reflects the GDPR posture of these vendors more accurately —
+  the old categorisation was a default applied during earlier bulk
+  import passes, not editorial intent.
+
+### Acknowledgements
+
+Catalogue informed by
+[`jkwakman/Open-Cookie-Database`](https://github.com/jkwakman/Open-Cookie-Database)
+(Apache-2.0 — with thanks). Their community-maintained cookie catalogue
+contributed 1,794 new cookie + 131 new domain entries to our database in
+this release. Their 5-category schema was mapped into our 11-category +
+`consent_burden` model, descriptions were retained where accurate, and
+941 entries already in our DB were deduplicated. Open-Cookie-Database is
+a separate project under different governance — we recommend it directly
+to anyone who wants the raw upstream catalogue. Without that work, this
+release would have been substantially smaller.
+
 ## [0.3.0] — 2026-05-01
 
 ### Highlights
@@ -267,6 +361,7 @@ returns whatever shape your UI expects.
 
 - Initial public release.
 
+[0.4.0]: https://github.com/ConsentTheater/playbill/releases/tag/v0.4.0
 [0.3.0]: https://github.com/ConsentTheater/playbill/releases/tag/v0.3.0
 [0.2.0]: https://github.com/ConsentTheater/playbill/releases/tag/v0.2.0
 [0.1.2]: https://github.com/ConsentTheater/playbill/releases/tag/v0.1.2
