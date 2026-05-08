@@ -1,7 +1,7 @@
 {
   "category": "session_recording",
   "description": "Heatmaps, session replays, screen recording, click tracking, scroll tracking",
-  "stats": { "cookies": 70, "domains": 90, "companies": 53 },
+  "stats": { "cookies": 69, "domains": 90, "companies": 53 },
   "cookies": {
     "ANONCHK": {"company":"Microsoft","service":"Microsoft Clarity","category":"session_recording","description":"Indicates whether MUID is transferred to ANID, used for advertising purposes by Microsoft","consent_burden":"contested","lifetime":"10 minutes","docs_url":"https://learn.microsoft.com/en-us/clarity/setup-and-installation/cookie-list"},
     "CLID": {"company":"Microsoft","service":"Microsoft Clarity","category":"session_recording","description":"Identifies the first time Clarity saw this user on any site using Clarity","consent_burden":"contested","lifetime":"1 year","docs_url":"https://learn.microsoft.com/en-us/clarity/setup-and-installation/cookie-list"},
@@ -23,7 +23,6 @@
     "_cs_mk_aa": {"company":"Contentsquare","service":"Contentsquare","category":"session_recording","description":"Contentsquare Adobe Analytics integration cookie for cross-platform analytics correlation","consent_burden":"contested","lifetime":"session","docs_url":"https://contentsquare.com/privacy/"},
     "_cs_s": {"company":"Contentsquare","service":"Contentsquare","category":"session_recording","description":"Contentsquare session cookie for grouping page views into sessions for analysis","consent_burden":"contested","lifetime":"30 minutes","docs_url":"https://contentsquare.com/privacy/"},
     "_dd_replay_*": {"company":"Datadog","service":"Datadog Session Replay","category":"session_recording","description":"Datadog session replay cookie — infrastructure monitoring tool recording browser sessions including DOM mutations and user interactions","consent_burden":"required_strict","pattern":true,"lifetime":"session","docs_url":"https://www.datadoghq.com/legal/privacy/"},
-    "_fs_uid": {"company":"FullSession","service":"FullSession Recording","category":"session_recording","description":"FullSession visitor identifier for session recording and interaction analytics","consent_burden":"required","lifetime":"1 year","docs_url":"https://www.fullsession.io/privacy-policy"},
     "_gcl_gs": {"company":"Google","service":"Google Optimize","category":"session_recording","description":"Google Optimize session experiment cookie for maintaining A/B test variation assignment during a session","consent_burden":"contested","lifetime":"session","docs_url":"https://developers.google.com/optimize"},
     "_gs_*": {"company":"Gainsight","service":"Gainsight PX","category":"session_recording","description":"Gainsight PX product experience cookie for tracking feature adoption and user engagement patterns","consent_burden":"required","pattern":true,"lifetime":"1 year","docs_url":"https://www.gainsight.com/privacy/"},
     "_hjAbsoluteSessionInProgress": {"company":"Hotjar","service":"Hotjar","category":"session_recording","description":"Detects the first pageview session of a user to control total session data tracking","consent_burden":"contested","lifetime":"30 minutes","docs_url":"https://help.hotjar.com/hc/en-us/articles/115011789248-Hotjar-Cookie-Information"},

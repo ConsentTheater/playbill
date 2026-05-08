@@ -1,7 +1,7 @@
 {
   "category": "social",
   "description": "Social media embeds, sharing widgets, social login, social plugins",
-  "stats": { "cookies": 74, "domains": 248, "companies": 132 },
+  "stats": { "cookies": 73, "domains": 248, "companies": 132 },
   "cookies": {
     "APISID": {"company":"Google","service":"Google Accounts","category":"social","description":"Google API session identifier for authenticating YouTube embeds and Google integrations","consent_burden":"contested","lifetime":"2 years","docs_url":"https://policies.google.com/technologies/cookies"},
     "GPS": {"company":"Google","service":"YouTube","category":"social","description":"YouTube GPS cookie for recording geolocation data on mobile devices viewing embedded videos","consent_burden":"required","lifetime":"30 minutes","docs_url":"https://policies.google.com/technologies/cookies"},
@@ -37,7 +37,6 @@
     "at-rand": {"company":"Oracle","service":"AddThis","category":"social","description":"AddThis randomized visitor identifier for social sharing analytics and ad network integration","consent_burden":"required_strict","lifetime":"2 years","docs_url":"https://www.addthis.com/privacy"},
     "bcookie": {"company":"LinkedIn","service":"LinkedIn","category":"social","description":"LinkedIn browser identifier cookie for bot detection and security across embedded content","consent_burden":"contested","lifetime":"1 year","docs_url":"https://www.linkedin.com/legal/l/cookie-table"},
     "c_user": {"company":"Meta","service":"Facebook","category":"social","description":"Stores the authenticated user ID for Facebook login sessions","consent_burden":"contested","lifetime":"90 days","docs_url":"https://www.facebook.com/policies/cookies/"},
-    "csrftoken": {"company":"Meta","service":"Instagram","category":"social","description":"Instagram CSRF protection token cookie for securing API requests from embedded widgets","consent_burden":"minimal","lifetime":"1 year","docs_url":"https://help.instagram.com/519522125107875"},
     "csv": {"company":"Reddit","service":"Reddit","category":"social","description":"Reddit compact site view preference cookie for mobile-optimized rendering","consent_burden":"minimal","lifetime":"2 years","docs_url":"https://www.redditinc.com/policies/cookies"},
     "datr": {"company":"Meta","service":"Facebook","category":"social","description":"Meta/Facebook browser identifier cookie for security and site integrity verification across Facebook services","consent_burden":"required","lifetime":"2 years","docs_url":"https://www.facebook.com/policies/cookies/"},
     "disqus_unique": {"company":"Disqus","service":"Disqus","category":"social","description":"Disqus unique visitor identifier for comment system analytics and ad targeting","consent_burden":"required","lifetime":"1 year","docs_url":"https://help.disqus.com/en/articles/1717155-use-of-cookies"},
