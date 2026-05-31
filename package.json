@@ -10,9 +10,9 @@
   "license": "AGPL-3.0-or-later",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/consenttheater/playbill.git"
+    "url": "git+https://codeberg.org/ConsentTheater/playbill.git"
   },
-  "homepage": "https://github.com/consenttheater/playbill",
+  "homepage": "https://codeberg.org/ConsentTheater/playbill",
   "keywords": [
     "gdpr",
     "privacy",
