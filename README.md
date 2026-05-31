@@ -6,6 +6,14 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Node](https://img.shields.io/node/v/@consenttheater/playbill.svg)](package.json)
 
+> [!IMPORTANT]
+> **Active development lives on [Codeberg](https://codeberg.org/ConsentTheater/playbill).**
+> The GitHub copy is a public mirror and isn't monitored for contributions.
+>
+> Please open issues, pull requests, questions and proposals on
+> [Codeberg](https://codeberg.org/ConsentTheater/playbill/issues).
+> Anything filed on the GitHub mirror is closed automatically.
+
 **The Playbill** — an open-source, tiered knowledge base of GDPR-relevant web trackers, with pure-function matching helpers. Each entry is tagged with the **consent burden** it creates under EU/GDPR rules. No verdicts, no risk scores — just facts you can build on.
 
 A theater playbill lists every actor and their role on stage. This package does the same for the web: every tracking cookie, every tracking domain, every company behind them — identified, categorised, and labelled with how much consent work each one creates.
