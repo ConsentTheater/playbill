@@ -1,7 +1,7 @@
 {
   "category": "data_leak",
   "description": "Third-party resources that expose visitor IP addresses — fonts, embeds, CDNs, maps",
-  "stats": { "cookies": 0, "domains": 804, "companies": 550 },
+  "stats": { "cookies": 0, "domains": 805, "companies": 550 },
   "cookies": {
   },
   "domains": {
@@ -79,6 +79,7 @@
     "assets.imgix.net": {"company":"imgix","service":"imgix Image CDN","category":"data_leak","consent_burden":"minimal","note":"Image optimization CDN — processes images server-side, leaking visitor IP for each image request","docs_url":"https://www.imgix.com/privacy"},
     "assets.vercel.com": {"company":"Vercel","service":"Vercel Assets CDN","category":"data_leak","consent_burden":"minimal","docs_url":"https://vercel.com/legal/privacy-policy"},
     "assets.website-files.com": {"company":"Webflow","service":"Webflow Assets CDN","category":"data_leak","consent_burden":"minimal","docs_url":"https://webflow.com/legal/privacy"},
+    "avatars.githubusercontent.com": {"company":"GitHub (Microsoft)","service":"GitHub Avatar CDN","category":"data_leak","consent_burden":"minimal","note":"GitHub user avatar image hosting (Gravatar analog) exposes viewer IP to Microsoft/GitHub on each request","docs_url":"https://docs.github.com/en/site-policy/privacy-policies"},
     "azureedge.net": {"company":"Microsoft","service":"Azure CDN","category":"data_leak","consent_burden":"minimal","note":"Azure CDN edge domain transmitting visitor IP to Microsoft infrastructure","docs_url":"https://privacy.microsoft.com/en-us/privacystatement"},
     "azurewebsites.net": {"company":"Microsoft","service":"Azure Web Apps","category":"data_leak","consent_burden":"minimal","note":"Azure App Service hosted sites expose visitor IP to Microsoft infrastructure","docs_url":"https://privacy.microsoft.com/en-us/privacystatement"},
     "b-cdn.net": {"company":"BunnyCDN","service":"BunnyCDN Pull Zone","category":"data_leak","consent_burden":"contested","docs_url":"https://bunny.net/privacy"},

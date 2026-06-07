@@ -1,7 +1,7 @@
 {
   "category": "security",
   "description": "Bot detection, CAPTCHA, CSRF protection, fraud prevention, DDoS mitigation",
-  "stats": { "cookies": 64, "domains": 47, "companies": 46 },
+  "stats": { "cookies": 65, "domains": 47, "companies": 47 },
   "cookies": {
     "AEC": {"company":"Google","service":"Google","category":"security","description":"Ensures requests within a browsing session are made by the user and not by other sites","consent_burden":"minimal","lifetime":"6 months","docs_url":"https://policies.google.com/technologies/cookies"},
     "CMSCsrfCookie": {"company":"Kentico","service":"Kentico","category":"security","consent_burden":"minimal","description":"Store's a security token that the system uses to validate all form data submitted via POST requests. Helps protect against Cross site request forgery.","lifetime":"session","docs_url":"https://xperience.io/policies/privacy-policy"},
@@ -37,6 +37,7 @@
     "aboutads_sessNNN": {"company":"Google","service":"Google AdSense","category":"security","consent_burden":"minimal","description":"This cookie is used for security authenticate users, prevent fraud, and protect users as they interact with a service.","lifetime":"30 minutes","docs_url":"https://business.safety.google/privacy/"},
     "ak_bmsc": {"company":"Akamai","service":"Akamai Bot Manager","category":"security","description":"Akamai Bot Manager session cookie for distinguishing human from bot traffic","consent_burden":"contested","lifetime":"session","docs_url":"https://www.akamai.com/legal/privacy-statement"},
     "arkose_token": {"company":"Arkose Labs","service":"Arkose Labs Bot Detection","category":"security","description":"Arkose Labs fraud prevention token cookie for CAPTCHA challenge verification","consent_burden":"contested","lifetime":"session","docs_url":"https://www.arkoselabs.com/privacy-policy/"},
+    "aws-waf-token": {"company":"Amazon Web Services","service":"AWS WAF","category":"security","consent_burden":"minimal","description":"AWS WAF (Web Application Firewall) bot-control and challenge token cookie used to verify legitimate traffic and mitigate automated abuse","lifetime":"session","docs_url":"https://docs.aws.amazon.com/waf/latest/developerguide/waf-tokens.html"},
     "bm_mi": {"company":"Akamai","service":"Akamai Bot Manager","category":"security","description":"Akamai Bot Manager machine identity cookie for advanced device fingerprinting","consent_burden":"contested","lifetime":"session","docs_url":"https://www.akamai.com/legal/privacy-statement"},
     "bm_sv": {"company":"Akamai","service":"Akamai Bot Manager","category":"security","description":"Akamai Bot Manager session verification cookie for real-time bot scoring","consent_burden":"contested","lifetime":"session","docs_url":"https://www.akamai.com/legal/privacy-statement"},
     "bm_sz": {"company":"Akamai","service":"Akamai Bot Manager","category":"security","description":"Akamai Bot Manager sizing cookie for recording client device capabilities for bot scoring","consent_burden":"contested","lifetime":"session","docs_url":"https://www.akamai.com/legal/privacy-statement"},

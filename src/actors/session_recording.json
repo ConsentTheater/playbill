@@ -1,10 +1,12 @@
 {
   "category": "session_recording",
   "description": "Heatmaps, session replays, screen recording, click tracking, scroll tracking",
-  "stats": { "cookies": 69, "domains": 90, "companies": 53 },
+  "stats": { "cookies": 71, "domains": 90, "companies": 53 },
   "cookies": {
     "ANONCHK": {"company":"Microsoft","service":"Microsoft Clarity","category":"session_recording","description":"Indicates whether MUID is transferred to ANID, used for advertising purposes by Microsoft","consent_burden":"contested","lifetime":"10 minutes","docs_url":"https://learn.microsoft.com/en-us/clarity/setup-and-installation/cookie-list"},
     "CLID": {"company":"Microsoft","service":"Microsoft Clarity","category":"session_recording","description":"Identifies the first time Clarity saw this user on any site using Clarity","consent_burden":"contested","lifetime":"1 year","docs_url":"https://learn.microsoft.com/en-us/clarity/setup-and-installation/cookie-list"},
+    "QuantumMetricSessionID": {"company":"Quantum Metric","service":"Quantum Metric Recording","category":"session_recording","description":"Quantum Metric session identifier used to stitch together session replay and experience analytics events for a single visit","consent_burden":"required","lifetime":"session","docs_url":"https://www.quantummetric.com/legal/privacy-policy/"},
+    "QuantumMetricUserID": {"company":"Quantum Metric","service":"Quantum Metric Recording","category":"session_recording","description":"Quantum Metric persistent visitor identifier linking session replays across visits for experience analytics","consent_burden":"required","lifetime":"1 year","docs_url":"https://www.quantummetric.com/legal/privacy-policy/"},
     "SM": {"company":"Microsoft","service":"Microsoft Clarity","category":"session_recording","description":"Synchronizes the MUID across Microsoft domains for cross-site analytics","consent_burden":"contested","lifetime":"session","docs_url":"https://learn.microsoft.com/en-us/clarity/setup-and-installation/cookie-list"},
     "__insp_uid": {"company":"Inspectlet","service":"Inspectlet","category":"session_recording","description":"Unique Inspectlet user identifier for session replay and visitor segmentation","consent_burden":"contested","lifetime":"1 year","docs_url":"https://www.inspectlet.com/legal"},
     "__insp_wid": {"company":"Inspectlet","service":"Inspectlet","category":"session_recording","description":"Inspectlet session recording window identifier for heatmap and funnel analytics","consent_burden":"contested","lifetime":"1 year","docs_url":"https://www.inspectlet.com/legal"},

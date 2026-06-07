@@ -7,11 +7,59 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.0] — 2026-06-07
+
+### Highlights
+
+Catalogue grew to **10,550 entries** (4,160 cookies + 6,390 domains). This
+release adds 39 new cookie/domain entries from a live-scan gap-filling pass
+over major SaaS, martech, e-commerce, and consumer sites, removes one
+dangerously over-broad pattern, and corrects two corrupted attributions.
+
+### Added
+
+- **B2B visitor identification / lead scoring** — `snitcher_device_id`
+  (Snitcher), `mkjs_user_id` / `mkjs_group_id` / `mkjs_anonymous_id`
+  (MadKudu), `wc_visitor` / `wc_client` / `wc_client_current` / `wc_swap`
+  (WhatConverts).
+- **Marketing attribution** — `flaretrk` (Attributer),
+  `__ps_r` / `__ps_sr` / `__ps_lu` / `__ps_slu` / `__ps_fva` / `__ps_did`
+  (Podscribe podcast-ad attribution), `partnero_*` (Partnero affiliate /
+  referral).
+- **Advertising** — `_uetmsclkid` (Microsoft Ads UET click ID), `_twpid`
+  (X / Twitter Pixel), `IR_*` (Impact.com), `_yjsu_yjad` (Yahoo Japan Ads).
+- **Analytics / experimentation** — `optimizelySession` (Optimizely),
+  `sc_is_visitor_unique` (StatCounter), `tk_ai_explat` / `explat_*`
+  (Automattic ExPlat).
+- **Session recording** — `QuantumMetricSessionID` / `QuantumMetricUserID`
+  (Quantum Metric).
+- **Security** — `aws-waf-token` (AWS WAF bot-control challenge token).
+- **Consent / CMP & functional** — TrustArc cookies (`TAsessionID`,
+  `notice_preferences`, `notice_gdpr_prefs`, `cmapi_gtm_bl`,
+  `cmapi_cookie_privacy`), `ccpa_applies`, `sensitive_pixel_option(s)`,
+  `_wixUIDX` (Wix).
+- **Data-leak** — `avatars.githubusercontent.com` (GitHub/Microsoft avatar
+  CDN; exposes viewer IP, Gravatar analog).
+
 ### Changed
 
 - Repository references now point to Codeberg — active development moved
   there; GitHub is a read-only mirror.
 - Minimum Node version raised to 24.
+
+### Fixed
+
+- Corrected two corrupted Awin attributions (`AwinChannelCookie`, `lantern`)
+  where the `company` and `lifetime` fields had been swapped during an earlier
+  import (`company` read `"29 days"`, `lifetime` read `"Awin"`).
+
+### Removed
+
+- Over-broad `aw*` cookie pattern that matched **any** cookie beginning with
+  `aw` and mislabelled it as Awin advertising (`required_strict`). It was
+  swallowing unrelated AWS cookies such as `aws-waf-token`. The legitimate
+  Awin click cookie `awc` retains its own exact-match entry, so no real
+  coverage is lost.
 
 ## [0.4.0] — 2026-05-09
 
@@ -369,7 +417,8 @@ returns whatever shape your UI expects.
 
 - Initial public release.
 
-[Unreleased]: https://codeberg.org/ConsentTheater/playbill/compare/v0.4.0...HEAD
+[Unreleased]: https://codeberg.org/ConsentTheater/playbill/compare/v0.5.0...HEAD
+[0.5.0]: https://codeberg.org/ConsentTheater/playbill/releases/tag/v0.5.0
 [0.4.0]: https://codeberg.org/ConsentTheater/playbill/releases/tag/v0.4.0
 [0.3.0]: https://codeberg.org/ConsentTheater/playbill/releases/tag/v0.3.0
 [0.2.0]: https://codeberg.org/ConsentTheater/playbill/releases/tag/v0.2.0
