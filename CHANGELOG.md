@@ -7,6 +7,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.0] — 2026-07-05
+
+### Highlights
+
+Catalogue grew to **10,595 entries** (4,205 cookies + 6,390 domains). This
+release adds 45 new cookie patterns from a gap-filling pass over SaaS,
+authentication, CDN, and analytics vendors.
+
+### Added
+
+- **Advertising (31 patterns)** — Beamer in-app messaging (5), SAP Gigya
+  identity (4), RD Station marketing automation (6), Bidence DSP (2),
+  Leadinfo B2B visitor ID (2), SOVRN header bidding, Trustpilot/Amplitude,
+  Between Digital, Media.net, OnAudience, Salesforce (3), Ezoic, Instagram
+  Pixel, Active Campaign, FreeWheel.
+- **Analytics (3 patterns)** — Google Tag Manager request throttle
+  (`_dc_gtm_`), Intercom visitor and session identifiers.
+- **Functional (10 patterns)** — Hotjar session/user (`_hjSession_`,
+  `_hjSessionUser_`), VWO goal experiments (`_vis_opt_exp_`), Braze user
+  storage, Clerk auth, CleanTalk anti-spam, Imperva/Incapsula CDN (2),
+  Supabase auth, SAP COPPA age gate.
+- **Security (1 pattern)** — ASP.NET Core anti-forgery token.
+
+### Fixed
+
+- **README stats corrected.** The README claimed 14,285 entries and 4,351
+  companies — these were inflated from a state where cross-file domain
+  collisions were double-counted. Actual counts: 10,595 entries, 3,000
+  unique companies.
+
 ## [0.5.0] — 2026-06-07
 
 ### Highlights
