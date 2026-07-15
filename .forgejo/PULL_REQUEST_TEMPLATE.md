@@ -31,6 +31,14 @@ If anything doesn't apply, leave it unchecked or delete the line.
      primary source that supports the correction. Secondary (third-party
      trackers-lists) are not sufficient on their own. -->
 
+## CLA acceptance
+
+```text
+I have read and agree to the CLA.
+```
+
+Paste the line above (uncommented) into your PR description. Maintainers will not merge without it. See [CONTRIBUTING.md](../CONTRIBUTING.md) and [CLA.md](../CLA.md).
+
 ## Related issue
 
 <!-- Link the issue this PR fixes, if any. "Fixes #123" auto-closes on merge. -->
