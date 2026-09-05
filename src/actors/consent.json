@@ -49,7 +49,7 @@
     "viewed_cookie_policy": {"company":"Cookie Law Info","service":"Cookie Law Info (WP)","category":"consent","description":"Cookie Law Info WordPress plugin cookie tracking that the user viewed the cookie policy notice","consent_burden":"minimal","lifetime":"1 year","docs_url":"https://developer.wordpress.org/plugins/privacy/"},
     "wirewheel_*": {"company":"WireWheel","service":"WireWheel Privacy Manager","category":"consent","description":"WireWheel privacy management cookie tracking consent and data subject request state","consent_burden":"minimal","pattern":true,"lifetime":"1 year","docs_url":"https://wirewheel.io/privacy-policy/"},
     "wt_consent": {"company":"WebToffee","service":"GDPR Cookie Consent (WP)","category":"consent","description":"WebToffee consent cookie storing the visitor's category preferences for future visits","consent_burden":"minimal","lifetime":"1 year","docs_url":"https://www.webtoffee.com/docs/gdpr-plugin/consent-driven-uet-using-gtm-and-cmp-to-track-responsibly/"},
-    "zest_consent": {"company":"Zest","service":"Zest CMP","category":"consent","description":"Zest consent cookie storing per-category consent state (essential/functional/analytics/marketing) as a first-party JSON payload","consent_burden":"minimal","lifetime":"1 year","docs_url":"https://cookiezest.com/"}
+    "zest_consent": {"company":"Zest","service":"Zest CMP","category":"consent","description":"Zest consent cookie storing per-category consent state (essential/functional/analytics/marketing) as a first-party JSON payload","consent_burden":"minimal","lifetime":"1 year","docs_url":"https://cookiezest.com/docs/"}
   },
   "domains": {
     "api.axept.io": {"company":"Axeptio","service":"Axeptio Consent API","category":"consent","consent_burden":"minimal","docs_url":"https://www.axeptio.eu/en/privacy"},
@@ -90,7 +90,7 @@
     "consentmanager.net": {"company":"consentmanager","service":"consentmanager CMP","category":"consent","consent_burden":"minimal","docs_url":"https://www.consentmanager.net/privacy/"},
     "cookie-bar.eu": {"company":"Cookie-Bar.eu","service":"Cookie-Bar","category":"consent","consent_burden":"minimal","docs_url":"https://cookie-bar.eu/"},
     "cookiefirst.com": {"company":"CookieFirst","service":"CookieFirst CMP","category":"consent","consent_burden":"minimal","docs_url":"https://cookiefirst.com/privacy-policy/"},
-    "geo.cookiezest.com": {"company":"Zest","service":"Zest Geo Jurisdiction API","category":"consent","consent_burden":"minimal","docs_url":"https://geo.cookiezest.com/"},
+    "geo.cookiezest.com": {"company":"Zest","service":"Zest Geo Jurisdiction API","category":"consent","consent_burden":"minimal","docs_url":"https://cookiezest.com/docs/geo/"},
     "geolocation.onetrust.com": {"company":"OneTrust","service":"OneTrust Geolocation","category":"consent","consent_burden":"minimal","docs_url":"https://www.onetrust.com/privacy/"},
     "orejime.empreintedigitale.fr": {"company":"Orejime","service":"Orejime Consent Manager","category":"consent","consent_burden":"minimal","docs_url":"https://github.com/empreinte-digitale/orejime"},
     "policy.app.cookieinformation.com": {"company":"Cookie Information","service":"Cookie Information Platform","category":"consent","consent_burden":"minimal","docs_url":"https://cookieinformation.com/privacy-policy/"},
