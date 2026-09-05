@@ -7,6 +7,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.7.0] — 2026-09-05
+
+### Highlights
+
+Consent category grew to 47 cookies / 46 domains / 46 companies. This
+release adds 3 new consent cookies and 1 consent domain.
+
+### Added
+
+- **Consent (3 cookies)** — SureCookie session identifier
+  (`surecookie_session_id`, Brainstorm Force) and WebToffee GDPR Cookie
+  Consent state (`wt_consent`), both reported by Pasi R. — thanks for the
+  report and support. Zest CMP per-category consent state (`zest_consent`).
+- **Consent (1 domain)** — geo.cookiezest.com, the Zest geo jurisdiction API
+  (cookieless edge lookup returning which privacy law applies per region).
+
+### Fixed
+
+- README stats synced to actual data: 10,599 entries (4,208 cookies +
+  6,391 domains), 3,003 unique companies.
+
 ## [0.6.0] — 2026-07-05
 
 ### Highlights
