@@ -45,10 +45,10 @@ Whether a site complies with GDPR is the work of supervisory authorities and cou
 
 | Metric | Count |
 |--------|-------|
-| Cookie signatures | 4,205 |
-| Domain signatures | 6,390 |
-| Total entries | 10,595 |
-| Unique companies | 3,000 |
+| Cookie signatures | 4,208 |
+| Domain signatures | 6,391 |
+| Total entries | 10,599 |
+| Unique companies | 3,003 |
 | Categories | 11 |
 
 ## Tiers
