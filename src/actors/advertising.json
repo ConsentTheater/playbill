@@ -1,7 +1,7 @@
 {
   "category": "advertising",
   "description": "Ad targeting, retargeting, DSPs, SSPs, ad exchanges, conversion tracking, programmatic advertising",
-  "stats": { "cookies": 1077, "domains": 1775, "companies": 1221 },
+  "stats": { "cookies": 1077, "domains": 1778, "companies": 1222 },
   "cookies": {
     "1P_JAR": {"company":"Google","service":"Google","category":"advertising","description":"Gathers site statistics and tracks conversion rates for Google advertising campaigns","consent_burden":"required_strict","lifetime":"30 days","docs_url":"https://policies.google.com/technologies/cookies"},
     "33x_*": {"company":"33Across","service":"33Across","category":"advertising","description":"33Across attention-based advertising identifier for viewability targeting","consent_burden":"required_strict","pattern":true,"lifetime":"1 year","docs_url":"https://www.33across.com/privacy-policy/"},
@@ -1833,6 +1833,7 @@
     "go.sonobi.com": {"company":"Sonobi","service":"Sonobi Redirect","category":"advertising","consent_burden":"required_strict","docs_url":"https://sonobi.com/privacy-policy/"},
     "googleadservices.com": {"company":"Google","service":"Google Ads","category":"advertising","consent_burden":"required_strict","docs_url":"https://business.safety.google/adscookies/"},
     "googlesyndication.com": {"company":"Google","service":"Google AdSense","category":"advertising","consent_burden":"required_strict","docs_url":"https://business.safety.google/adscookies/"},
+    "googletagservices.com": {"company":"Google","service":"Google Publisher Tag","category":"advertising","consent_burden":"required_strict","docs_url":"https://policies.google.com/technologies/cookies","note":"Google Publisher Tag ad serving script for trafficking and rendering display ads in GAM inventory"},
     "gothamads.com": {"company":"GothamAds","service":"GothamAds Ad Network","category":"advertising","consent_burden":"required","docs_url":"https://gothamads.com/privacy-policy"},
     "gotolstoy.com": {"company":"Tolstoy","service":"Tolstoy Interactive Video","category":"advertising","consent_burden":"contested","docs_url":"https://www.gotolstoy.com/privacy-policy"},
     "grapeshot.co.uk": {"company":"Oracle","service":"Grapeshot (Oracle) Contextual","category":"advertising","consent_burden":"required","docs_url":"https://www.oracle.com/legal/privacy/advertising-privacy-policy.html"},
@@ -1969,6 +1970,7 @@
     "log.pinterest.com": {"company":"Pinterest","service":"Pinterest Event Logging","category":"advertising","consent_burden":"required","docs_url":"https://policy.pinterest.com/en/cookies"},
     "loopme.com": {"company":"LoopMe","service":"LoopMe AI Advertising","category":"advertising","consent_burden":"required_strict","docs_url":"https://loopme.com/privacy-policy/"},
     "lufthansa.com": {"company":"Lufthansa","service":"Lufthansa Booking","category":"advertising","consent_burden":"required","docs_url":"https://www.lufthansa.com/de/en/privacy-policy"},
+    "lwadm.com": {"company":"Livewrapped","service":"Livewrapped Header Bidding","category":"advertising","consent_burden":"required_strict","docs_url":"https://www.livewrapped.com/privacy-policy","note":"Livewrapped header bidding wrapper — runs real-time programmatic auctions and syncs buyer IDs across demand partners"},
     "m.exactag.com": {"company":"Exactag","service":"Exactag Measurement","category":"advertising","consent_burden":"required","docs_url":"https://www.exactag.com/en/privacy/"},
     "m.xaxis.com": {"company":"Xaxis","service":"Xaxis (GroupM)","category":"advertising","consent_burden":"required_strict","docs_url":"https://www.xaxis.com/privacy-notice/"},
     "m32connect.com": {"company":"M32 Connect","service":"M32 Connect Ad Exchange","category":"advertising","consent_burden":"required","docs_url":"https://m32connect.com/privacy-policy/"},
@@ -2036,6 +2038,7 @@
     "onetag.com": {"company":"OneTag","service":"OneTag SSP","category":"advertising","consent_burden":"required","docs_url":"https://www.onetag.com/privacy-policy/"},
     "oneview.roku.com": {"company":"Roku","service":"Roku OneView","category":"advertising","consent_burden":"required_strict","note":"Roku OneView DSP — programmatic ad buying platform using Roku's first-party viewer data from 80M+ active accounts","docs_url":"https://www.roku.com/en-us/legal/privacy-policy"},
     "openx.net": {"company":"OpenX","service":"OpenX Ad Exchange","category":"advertising","consent_burden":"required","docs_url":"https://www.openx.com/privacy-center/"},
+    "openxcdn.net": {"company":"OpenX","service":"OpenX Ad Exchange CDN","category":"advertising","consent_burden":"required_strict","docs_url":"https://www.openx.com/legal/privacy-policy/","note":"OpenX ad exchange CDN — serves programmatic creatives and syncs advertising identifiers"},
     "optable.co": {"company":"Optable","service":"Optable Data Collaboration","category":"advertising","consent_burden":"contested","docs_url":"https://optable.co/privacy/"},
     "optimized-by.rubiconproject.com": {"company":"Magnite","service":"Magnite Optimization","category":"advertising","consent_burden":"required_strict","docs_url":"https://www.magnite.com/legal/advertising-technology-privacy-policy/"},
     "orange.com": {"company":"Orange","service":"Orange Digital Advertising","category":"advertising","consent_burden":"required","docs_url":"https://www.orange.com/en/personal-data-and-cookies"},
