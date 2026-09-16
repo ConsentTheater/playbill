@@ -1,7 +1,7 @@
 {
   "category": "consent",
   "description": "Consent Management Platforms (CMPs) — cookie banners, consent storage, preference management",
-  "stats": { "cookies": 47, "domains": 46, "companies": 45 },
+  "stats": { "cookies": 47, "domains": 47, "companies": 46 },
   "cookies": {
     "CookieConsent": {"company":"Cookiebot","service":"Cookiebot CMP","category":"consent","description":"Cookiebot consent cookie storing user consent state per category (necessary/preferences/statistics/marketing)","consent_burden":"minimal","lifetime":"1 year","docs_url":"https://www.cookiebot.com/en/privacy-policy/"},
     "CookieLawInfoConsent": {"company":"Cookie Law Info","service":"Cookie Law Info (WP)","category":"consent","description":"Cookie Law Info consent state cookie recording yes/no acceptance for each cookie category","consent_burden":"minimal","lifetime":"1 year","docs_url":"https://developer.wordpress.org/plugins/privacy/"},
@@ -94,6 +94,7 @@
     "geolocation.onetrust.com": {"company":"OneTrust","service":"OneTrust Geolocation","category":"consent","consent_burden":"minimal","docs_url":"https://www.onetrust.com/privacy/"},
     "orejime.empreintedigitale.fr": {"company":"Orejime","service":"Orejime Consent Manager","category":"consent","consent_burden":"minimal","docs_url":"https://github.com/empreinte-digitale/orejime"},
     "policy.app.cookieinformation.com": {"company":"Cookie Information","service":"Cookie Information Platform","category":"consent","consent_burden":"minimal","docs_url":"https://cookieinformation.com/privacy-policy/"},
+    "secureprivacy.ai": {"company":"Secure Privacy","service":"Secure Privacy CMP","category":"consent","consent_burden":"minimal","docs_url":"https://secureprivacy.ai/privacy-policy","note":"Secure Privacy consent management platform — serves cookie banners and stores consent state"},
     "sourcepoint.mgr.consensu.org": {"company":"Sourcepoint","service":"Sourcepoint TCF CMP","category":"consent","consent_burden":"minimal","docs_url":"https://www.sourcepoint.com/privacy-policy"},
     "tarteaucitron.io": {"company":"CNIL/Tarteaucitron","service":"Tarteaucitron CMP","category":"consent","consent_burden":"minimal","docs_url":"https://tarteaucitron.io/en/"},
     "transcend-cdn.com": {"company":"Transcend","service":"Transcend Consent Manager","category":"consent","consent_burden":"minimal","docs_url":"https://transcend.io/privacy"},
