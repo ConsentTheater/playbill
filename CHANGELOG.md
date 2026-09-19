@@ -7,6 +7,75 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.8.0] — 2026-09-19
+
+### Highlights
+
+Catalogue grew to **10,236 entries** (4,112 cookies + 6,124 domains) across
+3,017 unique companies. This release adds 36 new domain signatures across
+five PRs from a single contributor, plus attribution corrections and a
+Contentsquare family cleanup.
+
+### Added
+
+- **Analytics (13 domains)** — Microsoft Application Insights
+  (applicationinsights.azure.com), Chartbeat beacon, Forsta/Confirmit,
+  Datadog EU (datadoghq.eu), Oracle Eloqua (en25.com), Frosmo, Kilkaya
+  (k5a.io), Matomo Finland (matomo.digifinland.fi), Yandex
+  (mc.yandex.com), React and Share, Splunk (signalfx.com), Siteimprove
+  (siteimproveanalytics.io), StatCounter.
+- **Advertising (7 domains)** — Google Ad Traffic Quality
+  (adtrafficquality.google), Google Tag Services
+  (googletagservices.com), Microsoft (bing.net), TikTok
+  (analytics-ipv6.tiktokw.us), Livewrapped (lwadm.com), OpenX CDN
+  (openxcdn.net), Relevant Digital.
+- **Functional (9 domains)** — Nordic and EU SaaS cluster: AddSearch,
+  Findkit, Giosg, LeadDesk, Leadoo, Serviceform, Trustindex, TrustMary,
+  Videobot.
+- **Marketing (6 domains)** — Brevo (Sendinblue), GetSiteControl, Glimr,
+  MailMunch, Ortto, Superlines.
+- **Consent (1 domain)** — Secure Privacy CMP (secureprivacy.ai).
+
+### Fixed
+
+- `cookie_notice_accepted` reattributed to Hu-manity.co (Cookie Notice /
+  Cookie Compliance for WordPress, formerly dFactory). Accept stores
+  `true`, reject stores `false`, verified by independent live probes.
+- Splunk RUM entries (`splunk_rum_*`, `splunk-rum-collector.com`) now
+  point at current help.splunk.com documentation.
+- Corrected `ortto.app` and `signalfx.com` docs_url, and aligned
+  `siteimproveanalytics.io` consent burden with existing Siteimprove
+  entries.
+- README "Current stats" table removed — exact counts belong to the
+  changelog and to `loadPlaybill('full').stats`, computed from data at
+  runtime. This table had drifted twice already.
+
+### Changed
+
+- **Contentsquare products unified.** Hotjar, Heap, ClickTale, and Beamer
+  are all Contentsquare products. Their entries now share one company
+  name — `Contentsquare` — with the product name in `service` (`Hotjar`,
+  `Heap Analytics`, `ClickTale (Contentsquare)`, `Beamer`), so scans
+  report one owner instead of several spellings. 89 entries across
+  analytics, functional, marketing, and session_recording.
+- `hotjar.com` domain reattributed from Beamer to Hotjar (Contentsquare);
+  the `_BEAMER_*` cookies keep their own entries.
+- Dead documentation links replaced with live pages verified on
+  2026-09-19: `docs.contentsquare.com/en/web/cookies/` for
+  Contentsquare/ClickTale cookies and the current help.hotjar.com
+  "Cookies Set by the Hotjar Tracking Code" article for `_hj*` cookies.
+
+### Acknowledgements
+
+Massive shout-out to **Pasi R.** (Codeberg
+[@PasiRuo](https://codeberg.org/PasiRuo)) for their generous
+contributions to this release — five PRs adding 36 domain signatures
+spanning adtech, RUM, marketing automation, and Nordic/EU SaaS, plus
+attribution and documentation fixes. Every record arrives verified
+against vendor documentation, with entries dropped when the docs
+disappear. Contributions like this are what keep the catalogue growing —
+thank you.
+
 ## [0.7.0] — 2026-09-05
 
 ### Highlights
@@ -468,8 +537,9 @@ returns whatever shape your UI expects.
 
 - Initial public release.
 
-[Unreleased]: https://codeberg.org/ConsentTheater/playbill/compare/v0.5.0...HEAD
-[0.5.0]: https://codeberg.org/ConsentTheater/playbill/releases/tag/v0.5.0
+[Unreleased]: https://codeberg.org/ConsentTheater/playbill/compare/v0.8.0...HEAD
+[0.8.0]: https://codeberg.org/ConsentTheater/playbill/releases/tag/v0.8.0
+[0.7.0]: https://codeberg.org/ConsentTheater/playbill/releases/tag/v0.7.0
 [0.4.0]: https://codeberg.org/ConsentTheater/playbill/releases/tag/v0.4.0
 [0.3.0]: https://codeberg.org/ConsentTheater/playbill/releases/tag/v0.3.0
 [0.2.0]: https://codeberg.org/ConsentTheater/playbill/releases/tag/v0.2.0
