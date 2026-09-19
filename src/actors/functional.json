@@ -1,7 +1,7 @@
 {
   "category": "functional",
   "description": "Chat widgets, forms, payments, CMS features, support tools, loyalty programs, accessibility",
-  "stats": { "cookies": 1278, "domains": 703, "companies": 640 },
+  "stats": { "cookies": 1278, "domains": 706, "companies": 642 },
   "cookies": {
     ".ASPXANONYMOUS": {"company":"Microsoft","service":"Azure / Microsoft","category":"functional","consent_burden":"minimal","description":"Created by ASP.Net. This cookie configures anonymous identification for application authorization. This is required to identify entities that are not authenticated when authorization is required.","lifetime":"session","docs_url":"https://account.microsoft.com/privacy"},
     ".ASPXAUTH": {"company":"Microsoft","service":"Azure / Microsoft","category":"functional","consent_burden":"minimal","description":"Created by ASP.Net. .ASPXAUTH is a cookie to identify if the user is authenticated( As user's identity has been verified)","lifetime":"session","docs_url":"https://account.microsoft.com/privacy"},
@@ -1574,6 +1574,7 @@
     "cdns.gigya.com": {"company":"SAP","service":"SAP Customer Data Cloud (Gigya)","category":"functional","consent_burden":"required","docs_url":"https://www.sap.com/about/legal/privacy.html"},
     "chargebee.com": {"company":"Chargebee","service":"Chargebee Subscription","category":"functional","consent_burden":"contested","note":"Subscription management and billing platform — handles recurring payments, trials, and subscription analytics","docs_url":"https://www.chargebee.com/privacy/"},
     "chat.google.com": {"company":"Google","service":"Google Chat","category":"functional","consent_burden":"contested","docs_url":"https://policies.google.com/privacy"},
+    "chatbase.co": {"company":"Chatbase","service":"Chatbase AI Chatbot","category":"functional","consent_burden":"contested","note":"Customer-support chatbot host; official cookie policy documents functional, analytics and marketing uses","docs_url":"https://www.chatbase.co/legal/cookie-policy"},
     "checkout-service.paddle.com": {"company":"Paddle","service":"Paddle Checkout Service API","category":"functional","consent_burden":"contested","note":"Backend API for Paddle hosted checkout — handles order creation, pricing, and payment intent","docs_url":"https://www.paddle.com/legal/privacy"},
     "checkout.adyen.com": {"company":"Adyen","service":"Adyen Checkout","category":"functional","consent_burden":"minimal","docs_url":"https://www.adyen.com/policies-and-disclaimer/privacy-policy"},
     "checkout.agoda.com": {"company":"Booking Holdings/Agoda","service":"Agoda Checkout","category":"functional","consent_burden":"minimal","docs_url":"https://www.agoda.com/info/privacy-policy"},
@@ -1692,6 +1693,7 @@
     "gls-group.com": {"company":"GLS","service":"GLS Parcel Tracking","category":"functional","consent_burden":"minimal","docs_url":"https://gls-group.com/GROUP/en/data-protection"},
     "gocardless.com": {"company":"GoCardless","service":"GoCardless Direct Debit","category":"functional","consent_burden":"minimal","docs_url":"https://gocardless.com/privacy/"},
     "gravityforms.com": {"company":"Gravity Forms (Rocketgenius)","service":"Gravity Forms","category":"functional","consent_burden":"minimal","docs_url":"https://www.gravityforms.com/privacy/"},
+    "groweo.com": {"company":"Groweo Oy","service":"Groweo Customer Interaction Tools","category":"functional","consent_burden":"contested","note":"Customer interaction, lead capture and analytics service host","docs_url":"https://groweo.com/privacy-policy-of-the-data-controller/"},
     "happyforms.io": {"company":"Starter Templates (HappyForms)","service":"HappyForms","category":"functional","consent_burden":"minimal","docs_url":"https://happyforms.io/privacy-policy/"},
     "headwayapp.co": {"company":"Headway","service":"Headway Changelog Widget","category":"functional","consent_burden":"minimal","docs_url":"https://headwayapp.co/privacy-policy"},
     "honors.hilton.com": {"company":"Hilton","service":"Hilton Honors Loyalty","category":"functional","consent_burden":"contested","docs_url":"https://www.hilton.com/en/corporate/privacy/"},
@@ -1866,6 +1868,7 @@
     "ship24.com": {"company":"Ship24","service":"Ship24 Universal Tracking","category":"functional","consent_burden":"minimal","docs_url":"https://www.ship24.com/privacy-policy"},
     "shippo.com": {"company":"Shippo","service":"Shippo Shipping Platform","category":"functional","consent_burden":"minimal","docs_url":"https://goshippo.com/privacy"},
     "shipstation.com": {"company":"ShipStation","service":"ShipStation Tracking Widget","category":"functional","consent_burden":"contested","docs_url":"https://www.shipstation.com/privacy-policy/"},
+    "shop.app": {"company":"Shopify","service":"Shop Pay","category":"functional","consent_burden":"minimal","note":"Accelerated checkout host used to recognize opted-in Shop Pay customers and prefill checkout information","docs_url":"https://help.shopify.com/en/manual/payments/shop-pay"},
     "shortpixel.ai": {"company":"ShortPixel","service":"ShortPixel Adaptive Images","category":"functional","consent_burden":"minimal","note":"Image optimization CDN (SPAI) — serves WebP/AVIF and resized variants; processes image URLs server-side, no tracking pixels","docs_url":"https://shortpixel.com/privacy"},
     "shortpixel.com": {"company":"ShortPixel","service":"ShortPixel Image Optimizer","category":"functional","consent_burden":"minimal","note":"Image optimization service used by Autoptimize and the ShortPixel WP plugin","docs_url":"https://shortpixel.com/privacy"},
     "shortpixel.io": {"company":"ShortPixel","service":"ShortPixel CDN","category":"functional","consent_burden":"minimal","note":"ShortPixel rebrand domain — image optimization and delivery","docs_url":"https://shortpixel.com/privacy"},
