@@ -41,15 +41,9 @@ Whether a site complies with GDPR is the work of supervisory authorities and cou
 - **10,000+ entries** across 11 categories — one of the largest AGPL-licensed tracker databases available
 - **Matching utilities** — exact + pattern (trailing `*`) cookie matching, exact + subdomain hostname matching
 
-### Current stats
-
-| Metric | Count |
-|--------|-------|
-| Cookie signatures | 4,208 |
-| Domain signatures | 6,391 |
-| Total entries | 10,599 |
-| Unique companies | 3,003 |
-| Categories | 11 |
+Counts live in the [changelog](CHANGELOG.md) and in each release's stats —
+`loadPlaybill('full').stats` computes them from the data at runtime, so
+they're always current in your code.
 
 ## Tiers
 
