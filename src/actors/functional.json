@@ -1,7 +1,7 @@
 {
   "category": "functional",
   "description": "Chat widgets, forms, payments, CMS features, support tools, loyalty programs, accessibility",
-  "stats": { "cookies": 1278, "domains": 703, "companies": 640 },
+  "stats": { "cookies": 1278, "domains": 706, "companies": 643 },
   "cookies": {
     ".ASPXANONYMOUS": {"company":"Microsoft","service":"Azure / Microsoft","category":"functional","consent_burden":"minimal","description":"Created by ASP.Net. This cookie configures anonymous identification for application authorization. This is required to identify entities that are not authenticated when authorization is required.","lifetime":"session","docs_url":"https://account.microsoft.com/privacy"},
     ".ASPXAUTH": {"company":"Microsoft","service":"Azure / Microsoft","category":"functional","consent_burden":"minimal","description":"Created by ASP.Net. .ASPXAUTH is a cookie to identify if the user is authenticated( As user's identity has been verified)","lifetime":"session","docs_url":"https://account.microsoft.com/privacy"},
@@ -1675,6 +1675,7 @@
     "forms.office.comm": {"company":"Microsoft","service":"Microsoft Dynamics","category":"functional","consent_burden":"minimal","docs_url":"https://account.microsoft.com/privacy"},
     "formstack.com": {"company":"Formstack","service":"Formstack Forms","category":"functional","consent_burden":"minimal","docs_url":"https://www.formstack.com/legal/website-privacy-policy"},
     "forter.com": {"company":"Forter","service":"Forter Fraud Prevention","category":"functional","consent_burden":"contested","docs_url":"https://www.forter.com/privacy-policy/"},
+    "front.ai": {"company":"Front AI","service":"Front AI Conversational Service","category":"functional","consent_burden":"contested","docs_url":"https://front.ai/privacy/","note":"Front AI conversational AI chatbot platform for customer service automation — serves bot scripts and collects visitor interactions on client sites"},
     "g.alicdn.com": {"company":"Alibaba","service":"Alibaba CDN","category":"functional","consent_burden":"contested","docs_url":"https://terms.alicdn.com/legal-agreement/terms/privacy_policy_full/20231109180842269/20231109180842269.html"},
     "generatepress.com": {"company":"GeneratePress","service":"GeneratePress","category":"functional","consent_burden":"minimal","docs_url":"https://generatepress.com/privacy-policy/"},
     "geowidget.easypack24.net": {"company":"InPost","service":"InPost Parcel Widget","category":"functional","consent_burden":"contested","docs_url":"https://inpost.pl/en/privacy-policy"},
@@ -1773,6 +1774,7 @@
     "my.elementor.com": {"company":"Elementor","service":"Elementor Cloud","category":"functional","consent_burden":"minimal","docs_url":"https://elementor.com/about/privacy/"},
     "my.freshbooks.com": {"company":"FreshBooks","service":"FreshBooks App","category":"functional","consent_burden":"minimal","docs_url":"https://www.freshbooks.com/policies/privacy"},
     "narvar.com": {"company":"Narvar","service":"Narvar Post-Purchase","category":"functional","consent_burden":"contested","docs_url":"https://corp.narvar.com/privacy-policy"},
+    "ninchat.com": {"company":"Terveystalo (Ninchat)","service":"Ninchat Chat","category":"functional","consent_burden":"contested","docs_url":"https://www.ninchat.com/privacy","note":"Ninchat customer service chat platform (owned by Terveystalo) — tracks visitor sessions and records service conversations for quality and analytics purposes"},
     "ninjaforms.com": {"company":"Saturday Drive (Ninja Forms)","service":"Ninja Forms","category":"functional","consent_burden":"minimal","docs_url":"https://ninjaforms.com/privacy-policy/"},
     "noc1.wordfence.com": {"company":"Defiant Inc.","service":"Wordfence NOC","category":"functional","consent_burden":"contested","docs_url":"https://www.wordfence.com/terms-of-use-and-privacy-policy/"},
     "noc2.wordfence.com": {"company":"Defiant Inc.","service":"Wordfence Security NOC2","category":"functional","consent_burden":"contested","docs_url":"https://www.wordfence.com/terms-of-use-and-privacy-policy/"},
@@ -1925,6 +1927,7 @@
     "veriff.com": {"company":"Veriff","service":"Veriff Identity Verification","category":"functional","consent_burden":"contested","docs_url":"https://www.veriff.com/privacy-notice"},
     "viafoura.co": {"company":"Viafoura","service":"Viafoura","category":"functional","consent_burden":"minimal","docs_url":"https://viafoura.com/privacy-policy/"},
     "videobot.com": {"company":"Videobot","service":"Videobot Interactive Video","category":"functional","consent_burden":"contested","docs_url":"https://videobot.com/privacy-policy/","note":"Videobot interactive video widget — tracks viewer choices and interactions for conversion optimization"},
+    "virtuaaliapuri.com": {"company":"Tecsync (VirtuaaliApuri)","service":"VirtuaaliApuri Chatbot","category":"functional","consent_burden":"contested","docs_url":"https://virtuaaliapuri.com/tietosuoja/","note":"VirtuaaliApuri chatbot, form, and pop-up conversion toolkit (by Tecsync Oy) — collects contact details and chat content for lead generation on client sites"},
     "w3-total-cache.com": {"company":"BoldGrid","service":"W3 Total Cache","category":"functional","consent_burden":"minimal","note":"WordPress caching plugin — can use external CDN and object caching services","docs_url":"https://www.boldgrid.com/privacy-policy/"},
     "walletconnect.com": {"company":"WalletConnect","service":"WalletConnect Web3Modal","category":"functional","consent_burden":"contested","docs_url":"https://walletconnect.com/privacy-policy"},
     "wchat.freshchat.com": {"company":"Freshworks","service":"Freshchat API","category":"functional","consent_burden":"contested","docs_url":"https://www.freshworks.com/privacy/"},
