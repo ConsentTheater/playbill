@@ -1,7 +1,7 @@
 {
   "category": "marketing",
   "description": "Email marketing, SMS, push notifications, CRM tracking, marketing automation, lead capture",
-  "stats": { "cookies": 496, "domains": 591, "companies": 446 },
+  "stats": { "cookies": 496, "domains": 592, "companies": 447 },
   "cookies": {
     "A": {"company":"Google","service":"Google","category":"marketing","consent_burden":"required","description":"Google uses this cookies to make advertising more engaging to users and more valuable to publishers and advertisers","lifetime":"17 days","docs_url":"https://business.safety.google/privacy/"},
     "ABSELB": {"company":"LinkedIn","service":"LinkedIn","category":"marketing","consent_burden":"required","description":"This is Load Balancer Cookie for affiliate marketing","lifetime":"2 years","docs_url":"https://www.linkedin.com/legal/cookie-policy"},
@@ -762,6 +762,7 @@
     "dts.podtrac.com": {"company":"Podtrac","service":"Podtrac Podcast Tracking","category":"marketing","consent_burden":"contested","note":"Podcast measurement service — tracks listener downloads and demographics for podcast advertising attribution","docs_url":"https://analytics.podtrac.com/privacy-policy-gdrp"},
     "e-volution.ai": {"company":"E-volution.ai","service":"E-volution.ai","category":"marketing","consent_burden":"required","docs_url":"https://e-volution.ai/privacy/"},
     "easywebinar.com": {"company":"EasyWebinar","service":"EasyWebinar Platform","category":"marketing","consent_burden":"required","docs_url":"https://easywebinar.com/privacy-policy/"},
+    "ebxcdn.com": {"company":"Echobox","service":"Echobox Publisher Automation","category":"marketing","consent_burden":"contested","docs_url":"https://echobox.com/privacy/","note":"Echobox CDN serving social and newsletter automation scripts for publishers — tracks audience behaviour across client stories"},
     "email.adidas.com": {"company":"Adidas","service":"Adidas Email Marketing","category":"marketing","consent_burden":"required","docs_url":"https://www.adidas.com/us/privacy-policy"},
     "email.ah.nl": {"company":"Albert Heijn (Ahold Delhaize)","service":"Albert Heijn Email Marketing","category":"marketing","consent_burden":"required","docs_url":"https://www.ah.nl/privacy"},
     "email.airbnb.com": {"company":"Airbnb","service":"Airbnb Email Marketing","category":"marketing","consent_burden":"required","docs_url":"https://www.airbnb.com/terms/privacy_policy"},
