@@ -1,7 +1,7 @@
 {
   "category": "marketing",
   "description": "Email marketing, SMS, push notifications, CRM tracking, marketing automation, lead capture",
-  "stats": { "cookies": 497, "domains": 600, "companies": 450 },
+  "stats": { "cookies": 497, "domains": 601, "companies": 450 },
   "cookies": {
     "A": {"company":"Google","service":"Google","category":"marketing","consent_burden":"required","description":"Google uses this cookies to make advertising more engaging to users and more valuable to publishers and advertisers","lifetime":"17 days","docs_url":"https://business.safety.google/privacy/"},
     "ABSELB": {"company":"LinkedIn","service":"LinkedIn","category":"marketing","consent_burden":"required","description":"This is Load Balancer Cookie for affiliate marketing","lifetime":"2 years","docs_url":"https://www.linkedin.com/legal/cookie-policy"},
@@ -922,6 +922,7 @@
     "judge.me": {"company":"Judge.me","service":"Judge.me","category":"marketing","consent_burden":"contested","docs_url":"https://judge.me/privacy"},
     "keap.com": {"company":"Keap","service":"Keap CRM","category":"marketing","consent_burden":"required","docs_url":"https://keap.com/legal/privacy-policy"},
     "krxd.net": {"company":"Salesforce","service":"Salesforce","category":"marketing","consent_burden":"required","docs_url":"https://www.salesforce.com/company/privacy/"},
+    "lfeeder.com": {"company":"Leadfeeder","service":"Leadfeeder (Dealfront)","category":"marketing","consent_burden":"required_strict","note":"Leadfeeder tracker endpoint observed across 60 independently measured sites; used for B2B visitor identification and journey attribution","docs_url":"https://www.leadfeeder.com/cookies-and-tracking/"},
     "lijit.com": {"company":"SOVRN","service":"SOVRN","category":"marketing","consent_burden":"required","docs_url":"https://www.sovrn.com/legal/privacy-policy/"},
     "linkedin.com": {"company":"LinkedIn","service":"LinkedIn","category":"marketing","consent_burden":"required","docs_url":"https://www.linkedin.com/legal/privacy-policy"},
     "list-manage.com": {"company":"Mailchimp (Intuit)","service":"Mailchimp List Management","category":"marketing","consent_burden":"contested","docs_url":"https://mailchimp.com/legal/cookies/"},

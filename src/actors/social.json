@@ -1,7 +1,7 @@
 {
   "category": "social",
   "description": "Social media embeds, sharing widgets, social login, social plugins",
-  "stats": { "cookies": 73, "domains": 248, "companies": 132 },
+  "stats": { "cookies": 73, "domains": 249, "companies": 133 },
   "cookies": {
     "APISID": {"company":"Google","service":"Google Accounts","category":"social","description":"Google API session identifier for authenticating YouTube embeds and Google integrations","consent_burden":"contested","lifetime":"2 years","docs_url":"https://policies.google.com/technologies/cookies"},
     "GPS": {"company":"Google","service":"YouTube","category":"social","description":"YouTube GPS cookie for recording geolocation data on mobile devices viewing embedded videos","consent_burden":"required","lifetime":"30 minutes","docs_url":"https://policies.google.com/technologies/cookies"},
@@ -168,6 +168,7 @@
     "id.twitch.tv": {"company":"Twitch (Amazon)","service":"Twitch Login","category":"social","consent_burden":"contested","docs_url":"https://dev.twitch.tv/docs/authentication/"},
     "indiegogo.com/project": {"company":"Indiegogo","service":"Indiegogo Campaign Embed","category":"social","consent_burden":"contested","docs_url":"https://www.indiegogo.com/about/privacy"},
     "jsfiddle.net": {"company":"JSFiddle","service":"JSFiddle Embed","category":"social","consent_burden":"contested","docs_url":"https://jsfiddle.net/privacy/"},
+    "juicer.io": {"company":"Juicer","service":"Juicer Social Media Feed","category":"social","consent_burden":"minimal","note":"Embedded social-feed content host; provider states that embedded feeds do not set cookies or collect visitor personal data","docs_url":"https://www.juicer.io/data-protection"},
     "kapi.kakao.com": {"company":"Kakao","service":"Kakao API","category":"social","consent_burden":"required","docs_url":"https://www.kakaocorp.com/page/responsible/detail/privacy"},
     "kick.com": {"company":"Kick","service":"Kick Streaming Platform","category":"social","consent_burden":"required","docs_url":"https://kick.com/privacy-policy"},
     "launcher.spot.im": {"company":"OpenWeb","service":"OpenWeb Comments","category":"social","consent_burden":"required","docs_url":"https://www.openweb.com/legal-and-privacy/privacy/"},
