@@ -2144,7 +2144,7 @@
     "etracker.com": {"company":"etracker","service":"etracker Analytics","category":"analytics","consent_burden":"contested","docs_url":"https://www.etracker.com/en/data-privacy/"},
     "eu.i.amplitude.com": {"company":"Amplitude","service":"Amplitude EU","category":"analytics","consent_burden":"required","docs_url":"https://amplitude.com/privacy"},
     "eu.i.posthog.com": {"company":"PostHog","service":"PostHog","category":"analytics","consent_burden":"required","docs_url":"https://posthog.com/docs/privacy"},
-    "eu1.snoobi.com": {"company":"Snoobi","service":"Snoobi Analytics","category":"analytics","consent_burden":"required","note":"Finnish web analytics provider","docs_url":"https://www.snoobi.com/tietosuoja"},
+    "eu1.snoobi.com": {"company":"Snoobi","service":"Snoobi Analytics","category":"analytics","consent_burden":"required","note":"Finnish web analytics provider","docs_url":"https://www.snoobi.com/why-snoobi/gdpr-and-snoobi/"},
     "eulerian.net": {"company":"Eulerian Technologies","service":"Eulerian Analytics","category":"analytics","consent_burden":"required","docs_url":"https://www.eulerian.com/en/privacy-policy"},
     "eur-lex.europa.eu": {"company":"European Commission","service":"EUR-Lex Legal Database","category":"analytics","consent_burden":"minimal","docs_url":"https://eur-lex.europa.eu/content/legal-notice/legal-notice.html"},
     "europa.eu": {"company":"European Commission","service":"Europa.eu","category":"analytics","consent_burden":"minimal","docs_url":"https://ec.europa.eu/info/cookies_en"},
