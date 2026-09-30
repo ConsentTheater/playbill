@@ -1,7 +1,7 @@
 {
   "category": "advertising",
   "description": "Ad targeting, retargeting, DSPs, SSPs, ad exchanges, conversion tracking, programmatic advertising",
-  "stats": { "cookies": 1077, "domains": 1782, "companies": 1223 },
+  "stats": { "cookies": 1077, "domains": 1785, "companies": 1225 },
   "cookies": {
     "1P_JAR": {"company":"Google","service":"Google","category":"advertising","description":"Gathers site statistics and tracks conversion rates for Google advertising campaigns","consent_burden":"required_strict","lifetime":"30 days","docs_url":"https://policies.google.com/technologies/cookies"},
     "33x_*": {"company":"33Across","service":"33Across","category":"advertising","description":"33Across attention-based advertising identifier for viewability targeting","consent_burden":"required_strict","pattern":true,"lifetime":"1 year","docs_url":"https://www.33across.com/privacy-policy/"},
@@ -1130,6 +1130,7 @@
     "adhese.com": {"company":"Adhese","service":"Adhese","category":"advertising","consent_burden":"required_strict","docs_url":"https://adhese.com/images/Privacy%20Policy_Doggybites.pdf"},
     "adikteev.com": {"company":"Adikteev","service":"Adikteev App Retargeting","category":"advertising","consent_burden":"required","docs_url":"https://www.adikteev.com/privacy"},
     "adition.com": {"company":"Virtual Minds","service":"ADITION Ad Server","category":"advertising","consent_burden":"required_strict","docs_url":"https://www.virtualminds.de/en/privacy/"},
+    "aditude.io": {"company":"Aditude","service":"Aditude advertising platform","category":"advertising","consent_burden":"required","docs_url":"https://aditude.io/policies/privacy","note":"Advertising management platform for advertisers and agencies, working with cookies, pixels and other tracking technologies on the digital media assets of its clients."},
     "adkernel.com": {"company":"AdKernel","service":"AdKernel SSP","category":"advertising","consent_burden":"required_strict","docs_url":"https://adkernel.com/privacy-policy/"},
     "adledge.com": {"company":"AdLedge","service":"AdLedge Ad Verification","category":"advertising","consent_burden":"required","docs_url":"https://adledge.com/privacy-policy/"},
     "adloox.com": {"company":"Adloox","service":"Adloox Ad Verification","category":"advertising","consent_burden":"required","docs_url":"https://www.adloox.com/privacy"},
@@ -2425,6 +2426,7 @@
     "sharethis.com": {"company":"ShareThis","service":"ShareThis Social Data","category":"advertising","consent_burden":"required_strict","note":"ShareThis collects and sells browsing data from social sharing buttons embedded on millions of sites","docs_url":"https://sharethis.com/privacy/"},
     "showheroes.com": {"company":"ShowHeroes","service":"ShowHeroes Video Advertising","category":"advertising","consent_burden":"required_strict","docs_url":"https://showheroes.com/privacy/"},
     "silverpush.co": {"company":"SilverPush","service":"SilverPush Cross-Device","category":"advertising","consent_burden":"required_strict","note":"Cross-device tracking using ultrasonic audio beacons embedded in TV ads to link mobile devices to TV viewing. FTC warned about this practice.","docs_url":"https://www.silverpush.co/privacy-policy/"},
+    "simpli.fi": {"company":"Simpli.fi","service":"Simpli.fi media buying","category":"advertising","consent_burden":"required","docs_url":"https://simpli.fi/website-privacy-policy","note":"Finnish media buying and audience targeting platform. Vendor policy describes targeted advertising using IP addresses and cookie identifiers, regardless of whether the user is logged in or identified."},
     "singular.net": {"company":"Singular","service":"Singular Attribution","category":"advertising","consent_burden":"required","docs_url":"https://www.singular.net/privacy-policy/"},
     "sirdata.com": {"company":"Sirdata","service":"Sirdata Contextual Data","category":"advertising","consent_burden":"required","docs_url":"https://www.sirdata.com/privacy-policy/"},
     "sixt.com": {"company":"Sixt","service":"Sixt Car Rental","category":"advertising","consent_burden":"required","docs_url":"https://www.sixt.com/data-privacy/"},
@@ -2809,6 +2811,7 @@
     "weborama.fr": {"company":"Weborama","service":"Weborama","category":"advertising","consent_burden":"required_strict","docs_url":"https://weborama.com/en/privacy-policy/"},
     "webuyancar.com": {"company":"WeBuyAnyCar","service":"WeBuyAnyCar","category":"advertising","consent_burden":"contested","docs_url":"https://www.webuyanycar.com/privacy-policy/"},
     "wethrift.com": {"company":"Wethrift","service":"Wethrift Coupons","category":"advertising","consent_burden":"contested","docs_url":"https://www.wethrift.com/privacy"},
+    "wetracked.io": {"company":"wetracked.io","service":"wetracked.io ad revenue boosting","category":"advertising","consent_burden":"required","docs_url":"https://wetracked.io/privacy-policy","note":"Ad revenue optimisation for publishers, including Klaviyo revenue boosting and creative analytics, which measures and optimises advertising performance."},
     "widespace.com": {"company":"Widespace","service":"Widespace Mobile Ads","category":"advertising","consent_burden":"required","docs_url":"https://www.widespace.com/privacy/"},
     "widget.gotolstoy.com": {"company":"Tolstoy","service":"Tolstoy Widget","category":"advertising","consent_burden":"contested","docs_url":"https://www.gotolstoy.com/privacy-policy"},
     "widgets.outbrain.com": {"company":"Outbrain","service":"Outbrain Widget","category":"advertising","consent_burden":"required_strict","docs_url":"https://www.outbrain.com/legal/privacy/"},
