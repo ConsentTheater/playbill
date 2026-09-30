@@ -1,7 +1,7 @@
 {
   "category": "security",
   "description": "Bot detection, CAPTCHA, CSRF protection, fraud prevention, DDoS mitigation",
-  "stats": { "cookies": 66, "domains": 47, "companies": 47 },
+  "stats": { "cookies": 66, "domains": 48, "companies": 48 },
   "cookies": {
     ".AspNetCore.Antiforgery.": {"company":"Microsoft","service":"Microsoft","category":"security","consent_burden":"minimal","description":"Anti-forgery cookie is a security mechanism to defend against cross-site request forgery (CSRF) attacks.","lifetime":"Session","docs_url":"","pattern":true},
     "AEC": {"company":"Google","service":"Google","category":"security","description":"Ensures requests within a browsing session are made by the user and not by other sites","consent_burden":"minimal","lifetime":"6 months","docs_url":"https://policies.google.com/technologies/cookies"},
@@ -100,6 +100,7 @@
     "client.perimeterx.net": {"company":"HUMAN Security","service":"HUMAN (PerimeterX) Bot Defense","category":"security","consent_burden":"contested","docs_url":"https://www.humansecurity.com/privacy"},
     "ct.geetest.com": {"company":"GeeTest","service":"GeeTest CAPTCHA","category":"security","consent_burden":"contested","docs_url":"https://www.geetest.com/en/privacy"},
     "datadome.co": {"company":"DataDome","service":"DataDome Bot Protection","category":"security","consent_burden":"contested","docs_url":"https://datadome.co/privacy-policy/"},
+    "fraud0.com": {"company":"fraud0","service":"fraud0 fraud detection","category":"security","consent_burden":"minimal","docs_url":"https://www.fraud0.com/privacy-policy","note":"Device and transaction risk scoring used by checkout and account flows. Listed here as security rather than analytics because the fingerprint is used to block fraud rather than to profile visitors."},
     "friendly-captcha.com": {"company":"Friendly Captcha","service":"Friendly Captcha","category":"security","consent_burden":"minimal","note":"Privacy-friendly CAPTCHA alternative using proof-of-work; GDPR-compliant by design","docs_url":"https://friendlycaptcha.com/legal/privacy/"},
     "gcaptcha4.geetest.com": {"company":"GeeTest","service":"GeeTest CAPTCHA v4","category":"security","consent_burden":"contested","docs_url":"https://www.geetest.com/en/privacy"},
     "hcaptcha.com": {"company":"hCaptcha","service":"hCaptcha","category":"security","consent_burden":"minimal","docs_url":"https://www.hcaptcha.com/privacy"},

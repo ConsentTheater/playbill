@@ -1,7 +1,7 @@
 {
   "category": "tag_manager",
   "description": "Tag management systems — container scripts that load other trackers",
-  "stats": { "cookies": 10, "domains": 34, "companies": 25 },
+  "stats": { "cookies": 10, "domains": 35, "companies": 26 },
   "cookies": {
     "_dc_gtm_*": {"company":"Google","service":"Google Tag Manager","category":"tag_manager","description":"Throttles request rate for Google Tag Manager container loading","consent_burden":"contested","pattern":true,"lifetime":"1 minute","docs_url":"https://developers.google.com/tag-platform/tag-manager/web"},
     "_zaius_*": {"company":"Optimizely (Zaius)","service":"Zaius CDP","category":"tag_manager","description":"Zaius/Optimizely Data Platform cookie for B2C customer data collection and tag management","consent_burden":"required","pattern":true,"lifetime":"1 year","docs_url":"https://www.optimizely.com/legal/privacy-policy/"},
@@ -48,6 +48,7 @@
     "nexus.ensighten.com": {"company":"Ensighten","service":"Ensighten Nexus","category":"tag_manager","consent_burden":"contested","docs_url":"https://www.ensighten.com/privacy-policy/"},
     "tagmanager.google.com": {"company":"Google","service":"Google Tag Manager","category":"tag_manager","consent_burden":"contested","docs_url":"https://developers.google.com/tag-platform/tag-manager"},
     "tags.tiqcdn.com": {"company":"Tealium","service":"Tealium iQ","category":"tag_manager","consent_burden":"contested","docs_url":"https://docs.tealium.com/platforms/javascript/"},
+    "tracklution.com": {"company":"Tracklution","service":"Tracklution server-side tagging","category":"tag_manager","consent_burden":"minimal","docs_url":"https://tracklution.com/privacy-and-security/","note":"Template and hosting service for Google Tag Manager setups, focused on server-side tagging, first-party cookies and conversion APIs. The templates themselves are configuration, and the service is documented together with a tag management consent model."},
     "www.googletagmanager.com": {"company":"Google","service":"Google Tag Manager","category":"tag_manager","consent_burden":"contested","note":"Container script host; consent burden depends on tags loaded inside the container","docs_url":"https://developers.google.com/tag-platform/tag-manager"}
   }
 }
