@@ -169,13 +169,11 @@ import type {
 } from '@consenttheater/playbill';
 ```
 
-## License
-
-**AGPL-3.0-or-later** — free to use, including commercially, but modifications and derivative works must remain open source under a compatible license. This applies even when the software is offered as a hosted service (SaaS). See [LICENSE](./LICENSE).
-
-The AGPL is a deliberate choice: the tracker knowledge encoded here represents substantial community research, and we want forks, hosted scanners, and downstream tools to stay open so the ecosystem as a whole improves.
-
 ## Contributing
+
+The Playbill grows thanks to people who measure the web and share what they find.
+
+- **Pasi R.** ([@PasiRuo](https://codeberg.org/PasiRuo))
 
 Found a tracker we're missing? Want to correct a `consent_burden` value or update a lifetime? PRs welcome.
 
@@ -193,13 +191,8 @@ After editing any file under `src/actors/`, run:
 npm run normalize   # sorts keys, reformats, flags duplicates, updates stats
 ```
 
-## Migrating from v0.1.x
+## License
 
-v0.2.0 is a breaking change. See [CHANGELOG.md](./CHANGELOG.md) for the full migration guide. In short:
+**AGPL-3.0-or-later** — free to use, including commercially, but modifications and derivative works must remain open source under a compatible license. This applies even when the software is offered as a hosted service (SaaS). See [LICENSE](./LICENSE).
 
-- `severity` field renamed to `consent_burden` with descriptive labels:
-  - `critical` → `required_strict`
-  - `high` → `required`
-  - `medium` → `contested`
-  - `low` → `minimal`
-- The whole `scorer` module (`computeScore`, `bandForScore`, `SEVERITY_WEIGHTS`, `BANDS`, `Violation`, `ScoreResult`, `Band`, `BandKey`) was removed. Compute presentation hierarchies in your own UI layer.
+The AGPL is a deliberate choice: the tracker knowledge encoded here represents substantial community research, and we want forks, hosted scanners, and downstream tools to stay open so the ecosystem as a whole improves.
