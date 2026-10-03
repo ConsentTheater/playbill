@@ -7,6 +7,76 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.9.0] — 2026-10-03
+
+### Highlights
+
+Catalogue grew to **10,435 entries** (4,123 cookies + 6,312 domains) across
+3,150 unique companies. This release adds 199 new entries — 188 domains and
+11 cookies — from six contributor PRs spanning consent platforms, Nordic and
+EU SaaS, fraud prevention, and server-side tagging.
+
+### Added
+
+- **Consent platforms (43 domains, 3 cookies)** — the consent category
+  doubled in size. New CMPs: CCM19, Clickio, Consent Studio, Consentik,
+  Consently, Consentmo, ConsentPro, CookieConfirm, CookieHub, CookieManager.dk,
+  CookiePal, Cookie Script, CookieTractor, CoookieMonster, Enzuzo, Gravito,
+  Truendo, 2B Advice, Avada, Claspo, Cookie Information, Cookie Reports,
+  Cookiebot EU endpoints, FreePrivacyPolicy.com, GoodApps, Hu-manity.co,
+  Iubenda, OneTrust EU endpoints, Pandectes, Usercentrics privacy proxy and
+  CMP, DQ Communications, Zoho Campaigns CMP, and the legacy IAB Quantcast
+  Choice endpoint (`quantcast.mgr.consensu.org`). Plus consent state cookies:
+  `cmplz_consent_mode` (Complianz Consent Mode), `gravitosync` (Gravito
+  Sync), `_pandectes_gdpr` (Pandectes).
+- **Functional (70 domains, 5 cookies)** — a Nordic and EU SaaS cluster:
+  chat and support platforms (Giosg, Chatbase, Chatling, Chatra, Finnchat,
+  Front AI, GetJenny, ImBox, LiveAgent, Pure Chat, Weply, Telavox, Ninchat,
+  VirtuaaliApuri, Zipchat, Charla, Commslayer, Formilla; `giosg_sgid_*`,
+  `chatbase_anon_id`, `finqusession`/`_finqu_*`), booking and
+  payments (BokaMera, Bókun, Briqpay, Notify Me, Paytrail, Qliro, Qliva,
+  RowlyGo), forms and widgets (Basin, Fillout, Buttonizer, POWR, Elfsight,
+  LightWidget), e-commerce add-ons
+  (GoAffPro, Seal Subscriptions, Synctrack, NoGuess, Cevoid, Searchanise,
+  LangShop, AltText.ai, `_wpfuuid` for WPForms), video (Screen9, Wave.video,
+  JWX/JW Player, Sketchfab, Videoly), and platform hosts (Odoo, Zoho CRM,
+  Genesys Cloud EU, Zendesk Chat legacy, OpenAI Chat CDN, Trustmary,
+  ReadSpeaker, GTranslate, Mintt Studio, Bablic).
+- **Analytics (27 domains, 2 cookies)** — EU and privacy-focused analytics
+  (etracker, Umami Cloud, Rybbit, Nocodelytics, Metrimato,
+  Visitor Analytics loadbalancer; `burst_uid` for Burst Statistics,
+  `_koko_analytics_pages_viewed` for Koko Analytics), HubSpot EU script
+  hosts (js-eu1.hsforms.net, js-eu1.hsadspixel.net,
+  js-eu1.usemessages.com, js-eu1.hscollectedforms.net, hubapi.com),
+  Klaviyo and Metricool server-side tracking, Fonecta insight, Johku
+  Marketplace, Screen9 usage stats, SiteWit, Stellar A/B testing, Pertento,
+  Reaktion, Tagomo CMS, Snoobi EU endpoints, Webnode telemetry, Yola
+  tracking pixel, UserMaven.
+- **Marketing (36 domains, 1 cookie)** — LeadConnector/HighLevel (4 hosts
+  plus `msgsndr_id`), Custobar CDP, Echobox publisher automation,
+  Mailchimp and MailerLite form CDNs, Leadfeeder (Dealfront), Omnisend
+  snippets, OptiMonk, Sleeknote, Reco, Upsales, Attribuly, GoAffPro,
+  WonderPush, Yotpo, Klaviyo, and survey/UGC tools (Asklayer, Maze,
+  Netigate, EmbedSocial, Curator, Reviewflowz, Tagembed, Wishloop,
+  Profitscaler, PromoLayer, SociableKit, Leadcaller, Leader Internet
+  SGWidget, Revdot, BOGOS, Click Software).
+- **Session recording (6 domains)** — Lucky Orange, Plerdy, Snitcher
+  visitor identification, TruConversion, TWIPLA session replay, Visitor
+  Analytics.
+- **Advertising (3 domains)** — Aditude, Simpli.fi, wetracked.io.
+- **Security (1 domain)** — fraud0 fraud detection.
+- **Social (1 domain)** — Juicer social media feed.
+- **Tag management (1 domain)** — Tracklution server-side tagging.
+
+### Acknowledgements
+
+Huge thanks to **Pasi R.** (Codeberg
+[@PasiRuo](https://codeberg.org/PasiRuo)) for six PRs adding 199 verified
+entries to this release — measured consent platforms, widget and analytics
+hosts, marketing automation, session replay, and fraud prevention,
+every record checked against vendor documentation. Contributions like
+this are what keep the catalogue growing — thank you.
+
 ## [0.8.0] — 2026-09-19
 
 ### Highlights
@@ -537,9 +607,12 @@ returns whatever shape your UI expects.
 
 - Initial public release.
 
-[Unreleased]: https://codeberg.org/ConsentTheater/playbill/compare/v0.8.0...HEAD
+[Unreleased]: https://codeberg.org/ConsentTheater/playbill/compare/v0.9.0...HEAD
+[0.9.0]: https://codeberg.org/ConsentTheater/playbill/releases/tag/v0.9.0
 [0.8.0]: https://codeberg.org/ConsentTheater/playbill/releases/tag/v0.8.0
 [0.7.0]: https://codeberg.org/ConsentTheater/playbill/releases/tag/v0.7.0
+[0.6.0]: https://codeberg.org/ConsentTheater/playbill/releases/tag/v0.6.0
+[0.5.0]: https://codeberg.org/ConsentTheater/playbill/releases/tag/v0.5.0
 [0.4.0]: https://codeberg.org/ConsentTheater/playbill/releases/tag/v0.4.0
 [0.3.0]: https://codeberg.org/ConsentTheater/playbill/releases/tag/v0.3.0
 [0.2.0]: https://codeberg.org/ConsentTheater/playbill/releases/tag/v0.2.0
