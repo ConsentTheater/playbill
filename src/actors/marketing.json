@@ -1,7 +1,7 @@
 {
   "category": "marketing",
   "description": "Email marketing, SMS, push notifications, CRM tracking, marketing automation, lead capture",
-  "stats": { "cookies": 497, "domains": 627, "companies": 469 },
+  "stats": { "cookies": 497, "domains": 629, "companies": 469 },
   "cookies": {
     "A": {"company":"Google","service":"Google","category":"marketing","consent_burden":"required","description":"Google uses this cookies to make advertising more engaging to users and more valuable to publishers and advertisers","lifetime":"17 days","docs_url":"https://business.safety.google/privacy/"},
     "ABSELB": {"company":"LinkedIn","service":"LinkedIn","category":"marketing","consent_burden":"required","description":"This is Load Balancer Cookie for affiliate marketing","lifetime":"2 years","docs_url":"https://www.linkedin.com/legal/cookie-policy"},
@@ -765,6 +765,7 @@
     "dev.to/api": {"company":"DEV Community (Forem)","service":"DEV API","category":"marketing","consent_burden":"contested","docs_url":"https://dev.to/privacy"},
     "developers.google.com": {"company":"Google","service":"Google","category":"marketing","consent_burden":"required","docs_url":"https://business.safety.google/privacy/"},
     "dg1yij6bkbmk3.cloudfront.net": {"company":"LoyaltyLion","service":"LoyaltyLion Rewards","category":"marketing","consent_burden":"contested","docs_url":"https://loyaltylion.com/privacy"},
+    "diffuser-cdn.app-us1.com": {"company":"ActiveCampaign","service":"ActiveCampaign Site Tracking SDK","category":"marketing","consent_burden":"required","docs_url":"https://plugins.svn.wordpress.org/activecampaign-subscription-forms/trunk/site_tracking.js","note":"Distribution host used by the vendor-published WordPress site-tracking integration. Loading the SDK alone does not establish that a visit event was sent."},
     "digitalaudience.io": {"company":"Digital Audience","service":"Digital Audience","category":"marketing","consent_burden":"required","docs_url":"https://digitalaudience.io/legal/"},
     "dispatcher.adxcore.com": {"company":"Adxcore","service":"Adxcore","category":"marketing","consent_burden":"required"},
     "dts.podtrac.com": {"company":"Podtrac","service":"Podtrac Podcast Tracking","category":"marketing","consent_burden":"contested","note":"Podcast measurement service — tracks listener downloads and demographics for podcast advertising attribution","docs_url":"https://analytics.podtrac.com/privacy-policy-gdrp"},
@@ -1001,6 +1002,7 @@
     "popupmaker.com": {"company":"Popup Maker","service":"Popup Maker Plugin","category":"marketing","consent_burden":"contested","docs_url":"https://wppopupmaker.com/privacy-policy/"},
     "postrelease.com": {"company":"Nativo","service":"Nativo","category":"marketing","consent_burden":"required","docs_url":"https://www.nativo.com/privacy-policy"},
     "prf.hn": {"company":"Partnerize","service":"Partnerize","category":"marketing","consent_burden":"required","docs_url":"https://partnerize.com/privacy-policy/"},
+    "prism.app-us1.com": {"company":"ActiveCampaign","service":"ActiveCampaign Site Tracking","category":"marketing","consent_burden":"required","docs_url":"https://help.activecampaign.com/hc/en-us/articles/360000256220-Enable-site-tracking-for-your-Magento-Store","note":"Vendor installation guide identifies this request host for website visit tracking."},
     "profitscaler.io": {"company":"Profitscaler","service":"Profitscaler price optimization","category":"marketing","consent_burden":"minimal","docs_url":"https://profitscaler.io/privacy","note":"Automated price optimization for commerce sites. Vendor states that inside the app the only cookies are those that keep a user signed in, with no analytics, advertising or profiling, while its own website uses Google Analytics only on consent."},
     "promolayer.io": {"company":"PromoLayer","service":"PromoLayer promotions and personalization","category":"marketing","consent_burden":"contested","docs_url":"https://promolayer.io/en/privacy-policy/","note":"Promotion, campaign and on-site personalization layer for commerce sites, with extensive use of cookies for targeting and measuring campaign performance."},
     "pstmrk.it": {"company":"Postmark","service":"Postmark Email Tracking","category":"marketing","consent_burden":"contested","docs_url":"https://postmarkapp.com/privacy-policy"},

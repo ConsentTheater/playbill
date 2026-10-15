@@ -1,7 +1,7 @@
 {
   "category": "analytics",
   "description": "Usage measurement, audience insights, A/B testing, monitoring, CDP, attribution",
-  "stats": { "cookies": 1031, "domains": 1961, "companies": 1406 },
+  "stats": { "cookies": 1031, "domains": 1964, "companies": 1406 },
   "cookies": {
     "888_analytics_*": {"company":"888 Holdings","service":"888 Analytics","category":"analytics","description":"888 Holdings gambling analytics for casino and sports betting player behavior measurement","consent_burden":"required","pattern":true,"lifetime":"1 year","docs_url":"https://www.888.com/security-and-privacy/privacy-policy/"},
     "ABTasty": {"company":"AB Tasty","service":"AB Tasty","category":"analytics","description":"AB Tasty main visitor cookie storing A/B test assignments and personalization segment data","consent_burden":"required","lifetime":"13 months","docs_url":"https://www.abtasty.com/privacy-policy/"},
@@ -1955,6 +1955,7 @@
     "cdn.prismic.io": {"company":"Prismic","service":"Prismic CMS CDN","category":"analytics","consent_burden":"contested","docs_url":"https://prismic.io/privacy"},
     "cdn.productboard.com": {"company":"Productboard","service":"Productboard Feedback Widget","category":"analytics","consent_burden":"contested","docs_url":"https://www.productboard.com/privacy-policy/"},
     "cdn.qualtrics.com": {"company":"Qualtrics (SAP)","service":"Qualtrics XM CDN","category":"analytics","consent_burden":"required","docs_url":"https://www.qualtrics.com/privacy-statement/"},
+    "cdn.ravenjs.com": {"company":"Sentry","service":"Sentry Raven.js SDK CDN","category":"analytics","consent_burden":"required","docs_url":"https://raven-js.readthedocs.io/en/stable/install.html","note":"Legacy SDK distribution CDN. Loading the SDK does not establish that error events are transmitted."},
     "cdn.raygun.io": {"company":"Raygun","service":"Raygun CDN","category":"analytics","consent_burden":"required","docs_url":"https://raygun.com/privacy/"},
     "cdn.rb2b.com": {"company":"RB2B","service":"RB2B Person-Level ID","category":"analytics","consent_burden":"required_strict","note":"Identifies individual visitors (not just companies) on B2B websites using identity resolution","docs_url":"https://www.rb2b.com/privacy-policy"},
     "cdn.recotap.com": {"company":"Recotap","service":"Recotap ABM Platform","category":"analytics","consent_burden":"required_strict","note":"Account-based marketing platform — identifies and targets specific companies visiting your website for personalized advertising campaigns","docs_url":"https://recotap.com/privacy-policy/"},
@@ -2235,6 +2236,7 @@
     "goodrx.com": {"company":"GoodRx","service":"GoodRx Health","category":"analytics","consent_burden":"required","docs_url":"https://www.goodrx.com/privacy-policy"},
     "google-analytics.com": {"company":"Google","service":"Google Analytics","category":"analytics","consent_burden":"required","docs_url":"https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage"},
     "google-analytics.com (3rd party) or": {"company":"Google","service":"Google Analytics","category":"analytics","consent_burden":"required","docs_url":"https://privacy.google.com/take-control.html"},
+    "googleoptimize.com": {"company":"Google","service":"Google Optimize (Legacy)","category":"analytics","consent_burden":"required","docs_url":"https://developers.google.com/tag-platform/devguides/existing","note":"Legacy Optimize script host. Google ended Optimize on September 30, 2023; the script endpoint still returns Google code. A host observation is not proof of a functioning experiment or data transmission."},
     "googletagmanager.com/gtag/js": {"company":"Google","service":"Google Server-Side GTM","category":"analytics","consent_burden":"required_strict","note":"When deployed as server-side GTM, this runs on the site's own domain via CNAME, making Google tracking appear as first-party and invisible to ad blockers","docs_url":"https://developers.google.com/tag-platform/tag-manager/server-side"},
     "gostellar.app": {"company":"Stellar","service":"Stellar conversion and A/B testing","category":"analytics","consent_burden":"contested","docs_url":"https://gostellar.app/privacy-policy","note":"Conversion tracking, web personalization and A/B testing platform for ecommerce sites. Vendor lists these as its own products and states that usage data, including interactions with the platform, is collected for analytics and service improvement."},
     "goto.com": {"company":"GoTo (LogMeIn)","service":"GoTo Webinar","category":"analytics","consent_burden":"required","docs_url":"https://www.goto.com/company/legal/privacy"},
@@ -2357,6 +2359,7 @@
     "leovegas.com": {"company":"LeoVegas (MGM)","service":"LeoVegas Casino","category":"analytics","consent_burden":"required","docs_url":"https://www.leovegas.com/en-gb/privacy-policy/"},
     "lesechos.fr": {"company":"Les Echos/LVMH","service":"Les Echos","category":"analytics","consent_burden":"required","docs_url":"https://www.lesechos.fr/politique-de-confidentialite"},
     "lever.co": {"company":"Lever","service":"Lever Recruiting","category":"analytics","consent_burden":"contested","docs_url":"https://www.lever.co/privacy/"},
+    "lf-discover.com": {"company":"Dealfront","service":"Leadfeeder Visitor Enrichment","category":"analytics","consent_burden":"required_strict","docs_url":"https://help.leadfeeder.com/en/articles/13921693-how-to-use-ga4-to-enhance-google-analytics-reporting","note":"Vendor instructs customers to allow this domain for visitor-company enrichment in Google Analytics. Classification follows existing cdn.leadfeeder.com; loading resources alone is not proof that enrichment succeeded."},
     "liberation.fr": {"company":"Libération","service":"Libération","category":"analytics","consent_burden":"required","docs_url":"https://www.liberation.fr/protection-des-donnees/"},
     "lifetimely.io": {"company":"Lifetimely","service":"Lifetimely","category":"analytics","consent_burden":"required","docs_url":"https://lifetimely.io/privacy-policy"},
     "lightspeedhq.com": {"company":"Lightspeed","service":"Lightspeed Restaurant POS","category":"analytics","consent_burden":"contested","docs_url":"https://www.lightspeedhq.com/legal/privacy/"},
