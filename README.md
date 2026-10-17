@@ -156,6 +156,9 @@ Cookie entries marked `"pattern": true` use **prefix matching with a trailing `*
 
 This matches `_ga_ABC123`, `_ga_XYZ789`, etc. Wildcards in the middle of a key are not supported — only trailing `*`.
 
+Pattern matching skips entries with embedded or multiple wildcards, or an empty prefix.
+For example, `ss_*_analytics` is not treated as the broader prefix `ss_`.
+
 ## Types
 
 All types are exported:
