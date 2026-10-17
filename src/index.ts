@@ -25,6 +25,7 @@ export type {
   Playbill,
   CookieActor,
   DomainActor,
+  DomainRole,
   CookieMatch,
   DomainMatch,
   Tier,
@@ -39,7 +40,9 @@ export {
   listCategories
 } from './matcher.js';
 
-import type { Playbill, Tier, CookieActor, DomainActor, ConsentBurden } from './types.js';
+import type { Playbill, Tier, CookieActor, DomainActor, DomainRole, ConsentBurden } from './types.js';
+
+import { mergeDomainRoles } from './domain-roles.js';
 
 // All actor category files
 import advertising from './actors/advertising.json' with { type: 'json' };
@@ -67,14 +70,10 @@ const ALL_ACTORS: ActorFile[] = [
 
 const TOP_N_COMPANIES = 50;
 
-function mergeActors(actors: ActorFile[]): { cookies: Record<string, CookieActor>; domains: Record<string, DomainActor> } {
+function mergeActors(actors: ActorFile[]) {
   const cookies: Record<string, CookieActor> = {};
-  const domains: Record<string, DomainActor> = {};
-  for (const actor of actors) {
-    Object.assign(cookies, actor.cookies);
-    Object.assign(domains, actor.domains);
-  }
-  return { cookies, domains };
+  for (const actor of actors) Object.assign(cookies, actor.cookies);
+  return { cookies, ...mergeDomainRoles(actors) };
 }
 
 function getTopCompanies(cookies: Record<string, CookieActor>, domains: Record<string, DomainActor>, n: number): Set<string> {
@@ -129,12 +128,23 @@ const TIER_FILTERS: Record<Tier, (entry: EntryWithBurden, topCompanies: Set<stri
  *               'full' (everything, including minimal-burden entries)
  */
 export function loadPlaybill(tier: Tier = 'full'): Playbill {
-  const { cookies: allCookies, domains: allDomains } = mergeActors(ALL_ACTORS);
-  const topCompanies = getTopCompanies(allCookies, allDomains, TOP_N_COMPANIES);
+  const { cookies: allCookies, domains: allDomains, domainRoles: allRoles } = mergeActors(ALL_ACTORS);
+  const topCompanies = tier === 'mini'
+    ? getTopCompanies(allCookies, allDomains, TOP_N_COMPANIES) : new Set<string>();
   const filter = TIER_FILTERS[tier];
+  const cookies = tier === 'full' ? allCookies : filterEntries(allCookies, filter, topCompanies);
+  const domains = tier === 'full' ? allDomains : filterEntries(allDomains, filter, topCompanies);
+  const domainRoles: Record<string, DomainRole[]> = tier === 'full' ? allRoles : {};
 
-  const cookies = filterEntries(allCookies, filter, topCompanies);
-  const domains = filterEntries(allDomains, filter, topCompanies);
+  if (tier !== 'full') {
+    // Reconsider only multi-role hosts: filtering the primary alone can hide
+    // a consent-required role behind a minimal role.
+    for (const [hostname, roles] of Object.entries(allRoles)) {
+      const eligible = roles.filter(role => filter(role.entry, topCompanies));
+      if (eligible.length) domains[hostname] = eligible[eligible.length - 1].entry;
+      if (eligible.length > 1) domainRoles[hostname] = eligible;
+    }
+  }
 
   return {
     version: 3,
@@ -146,7 +156,8 @@ export function loadPlaybill(tier: Tier = 'full'): Playbill {
       companies: uniqueCompanyCount(cookies, domains)
     },
     cookies,
-    domains
+    domains,
+    domainRoles
   };
 }
 
@@ -160,7 +171,7 @@ export function loadPlaybill(tier: Tier = 'full'): Playbill {
  */
 export function loadActors(categories: string[]): Playbill {
   const selected = ALL_ACTORS.filter(a => categories.includes(a.category));
-  const { cookies, domains } = mergeActors(selected);
+  const { cookies, domains, domainRoles } = mergeActors(selected);
 
   return {
     version: 3,
@@ -172,6 +183,7 @@ export function loadActors(categories: string[]): Playbill {
       companies: uniqueCompanyCount(cookies, domains)
     },
     cookies,
-    domains
+    domains,
+    domainRoles
   };
 }

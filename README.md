@@ -156,6 +156,31 @@ Cookie entries marked `"pattern": true` use **prefix matching with a trailing `*
 
 This matches `_ga_ABC123`, `_ga_XYZ789`, etc. Wildcards in the middle of a key are not supported — only trailing `*`.
 
+## Domain roles
+
+A hostname can have several catalogue roles. Loaders keep those definitions,
+with their source categories, in the optional `domainRoles` map **only for
+hosts with multiple roles**. Single-role hosts use their existing `domains`
+entry; counts remain unique host counts, not role counts.
+
+```ts
+const db = loadPlaybill('full');
+const primary = matchDomain(db, 'browser.sentry-cdn.com'); // functional/minimal, as before
+const roles = db.domainRoles?.['browser.sentry-cdn.com']; // analytics, data_leak, functional
+```
+
+The explicit primary-role precedence (last wins) is advertising, analytics,
+consent, data_leak, fingerprinting, functional, marketing, security,
+session_recording, social, tag_manager. This preserves the historical full-tier
+primary independently of import order. It is a compatibility rule, not a ranking
+of consent burdens or proof of which features a site uses.
+
+`core` and `mini` consider each role before choosing the primary, so a minimal
+role no longer hides eligible roles of the same host. Metadata contains only
+roles allowed by the requested tier; `loadActors` retains only selected
+categories. Existing cookie and domain matching behaviour is unchanged.
+No catalogue classification or consent burden is changed.
+
 ## Types
 
 All types are exported:
@@ -163,7 +188,7 @@ All types are exported:
 ```ts
 import type {
   Playbill, Tier,
-  CookieActor, DomainActor,
+  CookieActor, DomainActor, DomainRole,
   CookieMatch, DomainMatch,
   ConsentBurden, Category
 } from '@consenttheater/playbill';
