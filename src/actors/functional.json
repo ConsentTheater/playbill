@@ -1,8 +1,9 @@
 {
   "category": "functional",
   "description": "Chat widgets, forms, payments, CMS features, support tools, loyalty programs, accessibility",
-  "stats": { "cookies": 1283, "domains": 773, "companies": 704 },
+  "stats": { "cookies": 1284, "domains": 773, "companies": 704 },
   "cookies": {
+    "_shop_app_essential": {"company":"Shopify","service":"Shop App Essential","category":"functional","consent_burden":"minimal","description":"Stores information required for Shop.app functionality.","lifetime":"1 year","docs_url":"https://www.shopify.com/legal/cookies"},
     ".ASPXANONYMOUS": {"company":"Microsoft","service":"Azure / Microsoft","category":"functional","consent_burden":"minimal","description":"Created by ASP.Net. This cookie configures anonymous identification for application authorization. This is required to identify entities that are not authenticated when authorization is required.","lifetime":"session","docs_url":"https://account.microsoft.com/privacy"},
     ".ASPXAUTH": {"company":"Microsoft","service":"Azure / Microsoft","category":"functional","consent_burden":"minimal","description":"Created by ASP.Net. .ASPXAUTH is a cookie to identify if the user is authenticated( As user's identity has been verified)","lifetime":"session","docs_url":"https://account.microsoft.com/privacy"},
     ".AspNetCore.Antiforgery.*": {"company":"Microsoft","service":"ASP.NET Core","category":"functional","description":"ASP.NET Core anti-forgery system cookie for cross-site request forgery prevention","consent_burden":"minimal","pattern":true,"lifetime":"session","docs_url":"https://learn.microsoft.com/en-us/aspnet/core/security/anti-request-forgery"},

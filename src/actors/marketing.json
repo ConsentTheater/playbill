@@ -1,8 +1,9 @@
 {
   "category": "marketing",
   "description": "Email marketing, SMS, push notifications, CRM tracking, marketing automation, lead capture",
-  "stats": { "cookies": 497, "domains": 627, "companies": 469 },
+  "stats": { "cookies": 498, "domains": 627, "companies": 470 },
   "cookies": {
+    "_shopify_marketing": {"company":"Shopify","service":"Shopify Storefront Marketing","category":"marketing","consent_burden":"required","description":"Stores marketing data for storefront and checkout buyer surfaces.","lifetime":"1 year","docs_url":"https://www.shopify.com/legal/cookies"},
     "A": {"company":"Google","service":"Google","category":"marketing","consent_burden":"required","description":"Google uses this cookies to make advertising more engaging to users and more valuable to publishers and advertisers","lifetime":"17 days","docs_url":"https://business.safety.google/privacy/"},
     "ABSELB": {"company":"LinkedIn","service":"LinkedIn","category":"marketing","consent_burden":"required","description":"This is Load Balancer Cookie for affiliate marketing","lifetime":"2 years","docs_url":"https://www.linkedin.com/legal/cookie-policy"},
     "ACH01": {"company":"Microsoft","service":"Bing / Microsoft","category":"marketing","consent_burden":"required","description":"Maintains information about which ad and where the user clicked on the ad.","lifetime":"End of session (browser)","docs_url":"https://account.microsoft.com/privacy"},

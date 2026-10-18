@@ -18,9 +18,9 @@ export function matchCookie(playbill: Playbill | null | undefined, cookieName: s
 
   for (const key of Object.keys(playbill.cookies)) {
     const entry = playbill.cookies[key];
-    if (!entry.pattern || !key.includes('*')) continue;
-    const prefix = key.replace(/\*.*$/, '');
-    if (prefix && cookieName.startsWith(prefix)) {
+    if (!entry.pattern || !key.endsWith('*')) continue;
+    const prefix = key.slice(0, -1);
+    if (prefix && !prefix.includes('*') && cookieName.startsWith(prefix)) {
       return { ...entry, name: cookieName, matchedPattern: key };
     }
   }
