@@ -44,8 +44,8 @@ for (const actor of actors) {
 it('retains complete provenance only for multi-role hosts', () => {
   const expected = Object.fromEntries([...groups].filter(([, roles]) => roles.length > 1));
   expect(full.domainRoles).toEqual(expected);
-  expect(Object.keys(full.domainRoles ?? {})).toHaveLength(284);
-  expect(Object.keys(full.domains)).toHaveLength(6312);
+  expect(Object.keys(full.domainRoles ?? {})).toHaveLength(Object.keys(expected).length);
+  expect(Object.keys(full.domains)).toHaveLength(groups.size);
 });
 
 it.each([actors, [...actors].reverse(), [...actors.slice(4), ...actors.slice(0, 4)]])
