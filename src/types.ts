@@ -61,6 +61,12 @@ export interface DomainActor {
   docs_url?: string;
 }
 
+/** One catalogue role of a domain, with its source category. */
+export interface DomainRole {
+  source: string;
+  entry: DomainActor;
+}
+
 /** The Playbill — the complete cast of known trackers. */
 export interface Playbill {
   version: number;
@@ -73,6 +79,8 @@ export interface Playbill {
   };
   cookies: Record<string, CookieActor>;
   domains: Record<string, DomainActor>;
+  /** Present only for hosts with multiple roles in this selection. */
+  domainRoles?: Record<string, DomainRole[]>;
 }
 
 /** Result of matching a cookie name against the playbill. */
