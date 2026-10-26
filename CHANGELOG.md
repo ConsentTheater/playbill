@@ -7,6 +7,78 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.10.0] — 2026-10-26
+
+### Highlights
+
+The catalogue now contains **10,816 entries** (4,270 cookies + 6,546 domains)
+across 3,290 unique companies. Compared with v0.9.0, this release adds 384
+signatures (150 cookies and 234 domains) and removes three overbroad cookie
+patterns, for a net increase of 381 entries.
+
+### Added
+
+- Optional `domainRoles` metadata and the exported `DomainRole` type preserve
+  each category definition for hosts with multiple roles. `loadPlaybill()`
+  and `loadActors()` retain source categories alongside the existing primary
+  domain entry; statistics still count unique hosts, not roles.
+- **Functional (32 cookies, 104 domains):** documented resource and platform
+  hosts for Duda, Framer, Wix, Webflow, Squarespace, Prismic, Uploadcare,
+  WordPress, Microsoft OneCDN, chat, maps, search and video services.
+  Cookie coverage includes authentication, language preferences, session
+  routing and browser-support checks.
+- **Analytics (54 cookies, 47 domains):** Nosto, Meiro, Piano, PixelYourSite,
+  Mida, Sophi, New Relic, Datadog, Splunk RUM, Nielsen and mPulse.
+  `analytics_session_id` and `analytics_session_id.last_access` identify
+  Segment's Amplitude session plugin, not proof of Session Replay; their
+  notes distinguish cookie persistence from localStorage.
+- **Advertising (13 cookies, 35 domains):** AppLovin Pixel, Adverticum,
+  Admixer, MetaRouter, Prebid opt-out state, Teads, Sportradar, Freestar,
+  Pubstack, PebblePost, MGID, Rise and other ad-delivery and attribution
+  services.
+- **Security (33 cookies, 11 domains):** AWS WAF and CloudFront, HUMAN,
+  DataDome, Friendly Captcha, Ravelin, TrafficGuard, CHEQ, fraud0,
+  authentication tokens and CSRF protection.
+- **Marketing (5 cookies, 25 domains):** ActiveCampaign tracking hosts,
+  Shopify marketing state, Sailthru, Insider, Voyado Onsite, Samba.ai,
+  Braze, Poptin, Pinpoll and other campaign and personalization services.
+- **Consent (11 cookies, 7 domains):** Salesforce Lightning and B2C Commerce,
+  Commanders Act, TermsFeed, Consentmo, Nosto, Luigi's Box, OneTrust cleanup
+  state, WP Consent API and Stefna Moya; Usercentrics, TrustCommander and
+  NitroPay CMP endpoints.
+- **Data-leak catalogue (3 domains):** specific Webflow and Squarespace
+  resource hosts, retained separately from their functional roles.
+- **Session recording (2 cookies):** Acoustic Tealeaf `TLTSID` and FullStory
+  `fs_lua`.
+- **Fingerprinting (1 domain):** `openfpcdn.io`, the FingerprintJS distribution
+  CDN. Loading the library does not by itself prove fingerprint collection.
+- **Tag management (1 domain):** LiveRamp LaunchPad's
+  `launchpad-wrapper.privacymanager.io` wrapper.
+
+### Fixed
+
+- Tier filtering now considers every domain role before choosing a primary.
+  A minimal functional role no longer hides an eligible analytics or other
+  consent-required role from `core` or `mini`. Full-tier primary precedence
+  remains compatible with previous releases.
+- Added exact Shopify, Squarespace and Moya cookie identities so lookups
+  return their documented purpose, consent burden and lifetime.
+- Replaced Marfeel's overbroad `_lv*`, `_s*` and `_ut*` patterns with the
+  documented `_nrbic` and `compass_rfv_*` signatures, avoiding attribution
+  of unrelated cookies to Marfeel.
+
+### Changed
+
+- Cookie pattern matching accepts only one trailing `*` with a nonempty
+  prefix. Embedded or multiple wildcards are ignored rather than treated
+  as broader prefixes; exact cookie matches still take priority.
+
+### Acknowledgements
+
+Thanks to **Pasi R.** ([@PasiRuo](https://codeberg.org/PasiRuo)), an independent
+researcher, for contributing PRs with researched catalogue additions and fixes
+to cookie matching and domain-role handling.
+
 ## [0.9.0] — 2026-10-03
 
 ### Highlights
@@ -607,7 +679,8 @@ returns whatever shape your UI expects.
 
 - Initial public release.
 
-[Unreleased]: https://codeberg.org/ConsentTheater/playbill/compare/v0.9.0...HEAD
+[Unreleased]: https://codeberg.org/ConsentTheater/playbill/compare/v0.10.0...HEAD
+[0.10.0]: https://codeberg.org/ConsentTheater/playbill/releases/tag/v0.10.0
 [0.9.0]: https://codeberg.org/ConsentTheater/playbill/releases/tag/v0.9.0
 [0.8.0]: https://codeberg.org/ConsentTheater/playbill/releases/tag/v0.8.0
 [0.7.0]: https://codeberg.org/ConsentTheater/playbill/releases/tag/v0.7.0
