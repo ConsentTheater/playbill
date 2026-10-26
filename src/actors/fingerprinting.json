@@ -1,7 +1,7 @@
 {
   "category": "fingerprinting",
   "description": "Browser fingerprinting, device identification, cross-device tracking",
-  "stats": { "cookies": 61, "domains": 146, "companies": 93 },
+  "stats": { "cookies": 61, "domains": 147, "companies": 94 },
   "cookies": {
     "TDID_v2": {"company":"The Trade Desk","service":"The Trade Desk Unified ID 2.0","category":"fingerprinting","description":"The Trade Desk UID2 cookie for cookieless identity resolution using hashed email addresses","consent_burden":"required_strict","lifetime":"1 year","docs_url":"https://www.thetradedesk.com/general/privacy"},
     "_1p_uid": {"company":"1plusX (Triton Digital)","service":"1plusX First-Party ID","category":"fingerprinting","description":"1plusX first-party data platform cookie for predictive audience identity resolution without cookies","consent_burden":"required_strict","lifetime":"1 year","docs_url":"https://www.1plusx.com/privacy-policy/"},
@@ -186,6 +186,7 @@
     "nonid.liveintent.com": {"company":"LiveIntent","service":"LiveIntent Non-ID Resolution","category":"fingerprinting","consent_burden":"required_strict","note":"LiveIntent non-ID resolution — cookieless identity matching using email engagement signals and device fingerprinting","docs_url":"https://www.liveintent.com/privacy-policy/"},
     "novatiq.com": {"company":"Novatiq","service":"Novatiq Zenith ID","category":"fingerprinting","consent_burden":"required_strict","note":"Novatiq telco-verified identity platform for cookieless audience identification","docs_url":"https://www.novatiq.com/privacy-policy/"},
     "onetag.com": {"company":"OneTag","service":"OneTag Publisher Identity","category":"fingerprinting","consent_burden":"required_strict","docs_url":"https://www.onetag.com/privacy-policy/"},
+    "openfpcdn.io": {"company":"Fingerprint","service":"FingerprintJS","category":"fingerprinting","consent_burden":"contested","docs_url":"https://github.com/fingerprintjs/cdn"},
     "optable.co": {"company":"Optable","service":"Optable Data Collaboration","category":"fingerprinting","consent_burden":"required","docs_url":"https://optable.co/privacy/"},
     "parakeet.azurewebsites.net": {"company":"Microsoft","service":"PARAKEET (Microsoft Privacy Sandbox)","category":"fingerprinting","consent_burden":"required","note":"Microsoft PARAKEET proposal — alternative to Google's Privacy Sandbox using a proxy-based approach where Microsoft intermediates between advertisers and users","docs_url":"https://github.com/nickhbg/nickhbg.github.io/blob/master/nickhbg-parakeet/README.md"},
     "pippio.com": {"company":"LiveRamp (Pippio)","service":"LiveRamp Pippio","category":"fingerprinting","consent_burden":"required_strict","docs_url":"https://liveramp.com/privacy/"},
