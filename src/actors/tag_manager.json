@@ -1,7 +1,7 @@
 {
   "category": "tag_manager",
   "description": "Tag management systems — container scripts that load other trackers",
-  "stats": { "cookies": 10, "domains": 35, "companies": 26 },
+  "stats": { "cookies": 10, "domains": 36, "companies": 27 },
   "cookies": {
     "_dc_gtm_*": {"company":"Google","service":"Google Tag Manager","category":"tag_manager","description":"Throttles request rate for Google Tag Manager container loading","consent_burden":"contested","pattern":true,"lifetime":"1 minute","docs_url":"https://developers.google.com/tag-platform/tag-manager/web"},
     "_zaius_*": {"company":"Optimizely (Zaius)","service":"Zaius CDP","category":"tag_manager","description":"Zaius/Optimizely Data Platform cookie for B2C customer data collection and tag management","consent_burden":"required","pattern":true,"lifetime":"1 year","docs_url":"https://www.optimizely.com/legal/privacy-policy/"},
@@ -44,6 +44,7 @@
     "identity.mparticle.com": {"company":"mParticle","service":"mParticle Identity API","category":"tag_manager","consent_burden":"required","docs_url":"https://www.mparticle.com/privacy/"},
     "js.hs-scripts.com": {"company":"HubSpot","service":"HubSpot Tracking Code (Tag)","category":"tag_manager","consent_burden":"required","docs_url":"https://knowledge.hubspot.com/reports/what-cookies-does-hubspot-set-in-a-visitor-s-browser"},
     "jssdks.mparticle.com": {"company":"mParticle","service":"mParticle JS SDK","category":"tag_manager","consent_burden":"required","docs_url":"https://www.mparticle.com/privacy/"},
+    "launchpad-wrapper.privacymanager.io": {"company":"LiveRamp","service":"LaunchPad","category":"tag_manager","consent_burden":"required","docs_url":"https://docs.liveramp.com/privacy-manager/en/migrate-to-version-2-of-ats-js.html"},
     "matomo.cloud": {"company":"Matomo","service":"Matomo Tag Manager","category":"tag_manager","consent_burden":"minimal","docs_url":"https://matomo.org/docs/tag-manager/"},
     "nexus.ensighten.com": {"company":"Ensighten","service":"Ensighten Nexus","category":"tag_manager","consent_burden":"contested","docs_url":"https://www.ensighten.com/privacy-policy/"},
     "tagmanager.google.com": {"company":"Google","service":"Google Tag Manager","category":"tag_manager","consent_burden":"contested","docs_url":"https://developers.google.com/tag-platform/tag-manager"},
