@@ -224,3 +224,5 @@ npm run normalize   # sorts keys, reformats, flags duplicates, updates stats
 **AGPL-3.0-or-later** — free to use, including commercially, but modifications and derivative works must remain open source under a compatible license. This applies even when the software is offered as a hosted service (SaaS). See [LICENSE](./LICENSE).
 
 The AGPL is a deliberate choice: the tracker knowledge encoded here represents substantial community research, and we want forks, hosted scanners, and downstream tools to stay open so the ecosystem as a whole improves.
+
+ConsentTheater is created and maintained by [Alex Zappa](https://alex.zappa.dev/).
